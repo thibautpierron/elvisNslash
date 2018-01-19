@@ -22,6 +22,7 @@ public class Maya : MonoBehaviour {
 	public float hitRate = 1;
 	private float counter;
 	// Use this for initialization
+	private bool dead = false;
 	void Start () {
 		anim = gameObject.GetComponent<Animator>();
 		nav = gameObject.GetComponent<NavMeshAgent>();
@@ -34,16 +35,22 @@ public class Maya : MonoBehaviour {
 		move = false;
 		attack = false;
 		distToEnemy = 100;
-		// counter = 0.2f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		health = stats.hp;
+		if (dead)
+			return;
 		clickHandler();
 		manageAttack();
 		updateAnimator();
 		navigation();
+		if (health <= 0) {
+			nav.enabled = false;
+			dead = true;
+			StartCoroutine(deathAnimation());
+		}
 	}
 
 	void clickHandler() {
@@ -93,7 +100,7 @@ public class Maya : MonoBehaviour {
 			} else if (counter == 0) {
 				Stats enemy = targetEnemy.GetComponent<Stats>();
 				int damage = stats.getDamage(enemy);
-				Debug.Log(damage);
+				// Debug.Log(damage);
 				enemy.hp -= damage;
 				if (enemy.hp <= 0) {
 					stats.xp += enemy.xp;
@@ -101,11 +108,12 @@ public class Maya : MonoBehaviour {
 					if (stats.xp > stats.levelUpXp) {
 						stats.xp = 0;
 						stats.level++;
+						int newXPn = Mathf.RoundToInt(stats.levelUpXp * 1.5f);
+						stats.levelUpXp = newXPn;
 					}
 					attack = false;
 					targetEnemy = null;
 				}
-				// Debug.Log("DAMAGE");
 				counter = hitRate;
 			}
 		} else {
@@ -129,4 +137,13 @@ public class Maya : MonoBehaviour {
 		}
 		nav.destination = destination;
 	}
+
+	IEnumerator	deathAnimation() {
+		yield return new WaitForSeconds(5);
+		for (float f = 0; f < 20; f++) {
+			gameObject.transform.Translate(Vector3.down * 0.05f);
+        	yield return new WaitForSeconds(.05f);
+		}
+		// Destroy(gameObject);
+    }
 }

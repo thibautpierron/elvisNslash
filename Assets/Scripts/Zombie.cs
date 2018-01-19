@@ -19,6 +19,9 @@ public class Zombie : MonoBehaviour {
 	private float distToMaya;
 	private bool dead = false;
 	public Spawner spawner;
+
+	public float hitRate = 1;
+	private float counter;
 	// Use this for initialization
 	void Start () {
 		anim = gameObject.GetComponent<Animator>();
@@ -66,6 +69,26 @@ public class Zombie : MonoBehaviour {
 	}
 
 	void updateAnimator() {
+
+		if(attack && !move) {
+			if (counter != 0) {
+				counter = System.Math.Max(counter - Time.deltaTime, 0);
+			} else if (counter == 0) {
+				Stats mayaStat = maya.GetComponent<Stats>();
+				int damage = stats.getDamage(mayaStat);
+				// Debug.Log(damage);
+				mayaStat.hp -= damage;
+				if (mayaStat.hp <= 0) {
+					attack = false;
+					dead = true;
+				}
+				counter = hitRate;
+			}
+		} else {
+			counter = 0.6f;
+		}
+
+
 		anim.SetInteger("health", health);
 		anim.SetBool("isMoving", move);
 		anim.SetBool("attack", attack);

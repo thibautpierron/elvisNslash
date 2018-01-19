@@ -2493,9 +2493,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c85f75bbcf94a61b5a7daafe700a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stats: {fileID: 0}
   health: 3
   aggroRange: 10
   spawner: {fileID: 0}
+  hitRate: 1
 --- !u!114 &114787812738548188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2507,13 +2509,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f86743d77114bdaa4a3f3a31aab98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strengh: 10
-  agility: 10
-  constitution: 10
+  strengh: 5
+  agility: 5
+  constitution: 5
   armor: 5
   hp: 0
+  hpMax: 0
   level: 1
-  xp: 10
+  xp: 30
   money: 10
   levelUpXp: 0
 --- !u!137 &137237828946482248
