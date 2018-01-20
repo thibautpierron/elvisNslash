@@ -35,6 +35,7 @@ public class ShieldScript : Sort {
 	}
 
 	public override string Info() {
-		return "Make a bubble shield around you. Increase your armor";
+		return "Fait une bulle de protection autour de vous. Augmente votre armure de " + armor.ToString() + " pendant " + time.ToString()
+		+ " secondes.\nProchain niveau:\n - Armor " + ((int)((float)armor * 1.5f)).ToString() + "\n - durée " + (time + 2).ToString() + " sec";
 	}
 }

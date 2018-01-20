@@ -72,6 +72,6 @@ public class blueBallScript : Sort {
 	}
 
 	public override string Info() {
-		return "Make a bubble shield around you. Increase your armor";
+		return "Fait une bulle de protection autour de vous. Augmente votre armure de " + armor.ToString() + " pendant ";
 	}
 }

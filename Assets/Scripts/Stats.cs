@@ -16,6 +16,10 @@ public class Stats : MonoBehaviour {
 	public int xp;
 	public int money;
 	public int levelUpXp;
+
+	public int	talentPoints;
+	public int	caracPoints;
+
 	// Use this for initialization
 	void Start () {
 		hpMax = 5 * constitution;
