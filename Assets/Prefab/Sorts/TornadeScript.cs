@@ -7,7 +7,7 @@ public class TornadeScript : Sort {
 	private float				delay = 0.5f;
 	private int					damage = 10;
 	private int					time = 7;
-	private List<GameObject>	enemy;
+	private List<Stats>			enemy;
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +29,11 @@ public class TornadeScript : Sort {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Zombie")
-			enemy.Add(other.gameObject);
+			enemy.Add(other.gameObject.GetComponent<Stats>());
+	}
+
+	void OnTriggerExit(Collider other) {
+		if (other.tag == "Zombie")
+			enemy.Remove(other.gameObject.GetComponent<Stats>());
 	}
 }
