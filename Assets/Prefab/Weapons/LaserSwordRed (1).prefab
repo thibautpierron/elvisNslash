@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 114005247202774318}
   m_Layer: 0
   m_Name: LaserSwordRed (1)
-  m_TagString: Untagged
+  m_TagString: LaserSaber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,6 +676,7 @@ MonoBehaviour:
   ConstantSound: {fileID: 8300000, guid: 2e654dad5826f75439d0b193c671faa2, type: 3}
   BladeStart: {fileID: 1298525179498026}
   BladeEnd: {fileID: 1252712796164328}
+  state: 0
 --- !u!120 &120818369895116124
 LineRenderer:
   m_ObjectHideFlags: 1

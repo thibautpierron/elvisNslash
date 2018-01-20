@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using DigitalRuby.LaserSword;
 
 public class Maya : MonoBehaviour {
 
@@ -43,6 +44,10 @@ public class Maya : MonoBehaviour {
 
 		weapon = GameObject.Instantiate(weaponPrefab);
 		weaponUnused = GameObject.Instantiate(weaponPrefab);
+		// if (weapon.gameObject.tag == "LaserSaber") {
+		// 	weapon.GetComponentInChildren<LaserSwordScript>().Activate();
+		// 	weaponUnused.GetComponentInChildren<LaserSwordScript>().Deactivate();
+		// }
 		weapon.gameObject.transform.parent = rightHandPlace.transform;
 
 		guitar = GameObject.Instantiate(guitar);
@@ -199,32 +204,19 @@ public class Maya : MonoBehaviour {
 	}
 
 	void manageWeaponPlace(bool attacking) {
-		// if (attacking) {
-		// 	weapon.gameObject.transform.parent = rightHandPlace.transform;
-		// 	weapon.transform.position = originPos;
-		// 	weapon.transform.rotation = originRot;
-		// } else {
-			// switch (weapon.type) {
-			// 	case Weapon.Type.ONE_HAND:
-			// 		weapon.transform.position = beltPlace.transform.position;
-			// 		weapon.transform.rotation = beltPlace.transform.rotation;
-			// 		weapon.gameObject.transform.parent = beltPlace.transform; break;
-			// 	case Weapon.Type.TWO_HAND:
-			// 		weapon.transform.position = weaponBackPlace.transform.position;
-			// 		weapon.transform.rotation = weaponBackPlace.transform.rotation;
-			// 		weapon.gameObject.transform.parent = weaponBackPlace.transform; break;
-			// 	case Weapon.Type.DOUBLE:
-			// 		weapon.transform.position = beltPlace.transform.position;
-			// 		weapon.transform.rotation = beltPlace.transform.rotation;
-			// 		weapon.gameObject.transform.parent = beltPlace.transform; break;
-			// }
-		// }
 		if (attacking) {
 			weapon.gameObject.SetActive(true);
 			weaponUnused.gameObject.SetActive(false);
+			if (weapon.gameObject.tag == "LaserSaber") {
+				if (weapon.GetComponentInChildren<LaserSwordScript>().state == 0)
+					weapon.GetComponentInChildren<LaserSwordScript>().Activate();
+				// weaponUnused.GetComponentInChildren<LaserSwordScript>().Deactivate();
+			}
 		} else {
 			weapon.gameObject.SetActive(false);
 			weaponUnused.gameObject.SetActive(true);
+			// if (weapon.GetComponentInChildren<LaserSwordScript>().state == 1)
+			// 	weapon.GetComponentInChildren<LaserSwordScript>().Deactivate();
 		}
 	}
 }
