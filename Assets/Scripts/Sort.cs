@@ -21,6 +21,7 @@ public class Sort : MonoBehaviour {
 		if (AZ == null && distance == 0.0f)
 		{
 			clone.transform.position = player.transform.position;
+			transform.position = player.transform.position;
 			return ;
 		}
 
@@ -35,9 +36,14 @@ public class Sort : MonoBehaviour {
 		if ((distance == 0.0f || rayon == 0.0f) && AZ)
 		{
 			if (rayon == 0.0f)
-				clone = Instantiate(PS, player.transform.position + new Vector3(0,1,0), Quaternion.LookRotation(hit.point + new Vector3(0,1,0)));
+			{
+				clone = Instantiate(PS, player.transform.position + new Vector3(0,1,0), Quaternion.LookRotation(-hit.point - new Vector3(0,1,0) + player.transform.position));
+				transform.position = player.transform.position + new Vector3(0,1,0);
+			}
 			else
+			{
 				clone = Instantiate(PS, player.transform.position, new Quaternion(0,0,0,0));
+			}
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
 			return ;
@@ -48,6 +54,7 @@ public class Sort : MonoBehaviour {
 		if (Input.GetMouseButton(0) && AZ)
 		{
 			clone = Instantiate(PS, hit.point, new Quaternion(0,0,0,0));
+			transform.position = hit.point;
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
 		}

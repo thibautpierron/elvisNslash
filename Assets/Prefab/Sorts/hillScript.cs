@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TornadeScript : Sort {
+public class hillScript : Sort {
 
-	private float				delay = 0.5f;
-	private int					damage = 2;
-	private int					time = 7;
-	private List<Stats>			enemy;
+	private float				delay = 2.0f;
+	private int					damage = 5;
+	private int					time = 15;
+	private List<Stats>			player;
 
 	// Use this for initialization
 	void Start () {
-		enemy = new List<Stats>();
+		player = new List<Stats>();
 	}
 	
 	// Update is called once per frame
@@ -22,11 +22,11 @@ public class TornadeScript : Sort {
 	public override IEnumerator Execute() {
 		for (int i = 0 ; i < time / delay ; i++)
 		{
-			foreach(Stats stat in enemy)
+			foreach(Stats stat in player)
 			{
-				stat.hp -= damage;
-				if (stat.hp < 0)
-					stat.hp = 0;
+				stat.hp += damage;
+				if (stat.hp > stat.hpMax)
+					stat.hp = stat.hpMax;
 			}
 			yield return new WaitForSeconds(delay);
 		}
@@ -36,16 +36,16 @@ public class TornadeScript : Sort {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if (other.tag == "Zombie")
+		if (other.tag == "Player")
 		{
-			enemy.Add(other.gameObject.GetComponent<Stats>());
+			player.Add(other.gameObject.GetComponent<Stats>());
 		}
 	}
 
 	void OnTriggerExit(Collider other) {
-		if (other.tag == "Zombie")
+		if (other.tag == "Player")
 		{
-			enemy.Remove(other.gameObject.GetComponent<Stats>());
+			player.Remove(other.gameObject.GetComponent<Stats>());
 		}
 	}
 }
