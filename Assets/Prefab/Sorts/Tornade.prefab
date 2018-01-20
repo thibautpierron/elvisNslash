@@ -83,9 +83,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4530503352091980}
-  - component: {fileID: 114284890948987856}
+  - component: {fileID: 114552450694576570}
+  - component: {fileID: 136440557077942192}
   m_Layer: 0
-  m_Name: TornadeScript
+  m_Name: Tornade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1137702863471246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.961521, y: 10.999084, z: 80.089615}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4784482439946842}
@@ -131,7 +132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1528700556505218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 127.581955, y: -244.12561, z: 295.19656}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4179854752058074}
@@ -334,23 +335,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114284890948987856
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1528700556505218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0781f290ebf0e4b54a39d24c929cb1a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0
-  rayon: 4
-  AZ: {fileID: 114320132694609312}
-  player: {fileID: 0}
-  PS: {fileID: 198548292676296906, guid: 4e41f9353933149b1a6f328c27a77de5, type: 2}
-  clone: {fileID: 0}
 --- !u!114 &114320132694609312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -368,3 +352,33 @@ MonoBehaviour:
   - {fileID: 108702000012529638}
   - {fileID: 108507443099067700}
   - {fileID: 108682669097575496}
+--- !u!114 &114552450694576570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1528700556505218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a43b1b91e5347e291797b3a6820101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 0
+  rayon: 4
+  AZ: {fileID: 114320132694609312}
+  player: {fileID: 0}
+  PS: {fileID: 198548292676296906, guid: 4e41f9353933149b1a6f328c27a77de5, type: 2}
+  clone: {fileID: 0}
+--- !u!136 &136440557077942192
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1528700556505218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 7
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

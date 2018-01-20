@@ -17,18 +17,10 @@ public class Sort : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	public void Update () {
 		if (AZ == null && distance == 0.0f)
 		{
 			clone.transform.position = player.transform.position;
-			return ;
-		}
-
-		if (distance == 0.0f && AZ)
-		{
-			clone = Instantiate(PS, player.transform.position, new Quaternion(0,0,0,0));
-			Destroy(AZ.gameObject);
 			return ;
 		}
 
@@ -40,12 +32,28 @@ public class Sort : MonoBehaviour {
 			AZ.transform.position = hit.point + new Vector3(0.0f, 6.0f, 0.0f);
 		}
 
+		if ((distance == 0.0f || rayon == 0.0f) && AZ)
+		{
+			if (rayon == 0.0f)
+				clone = Instantiate(PS, player.transform.position + new Vector3(0,1,0), Quaternion.LookRotation(hit.point + new Vector3(0,1,0)));
+			else
+				clone = Instantiate(PS, player.transform.position, new Quaternion(0,0,0,0));
+			StartCoroutine(Execute());
+			Destroy(AZ.gameObject);
+			return ;
+		}
+
 		if (Input.GetKeyDown(KeyCode.Escape))
 			Destroy(gameObject);
 		if (Input.GetMouseButton(0) && AZ)
 		{
 			clone = Instantiate(PS, hit.point, new Quaternion(0,0,0,0));
+			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
 		}
+	}
+
+	public virtual IEnumerator Execute() {
+		yield return new WaitForSeconds(0);
 	}
 }
