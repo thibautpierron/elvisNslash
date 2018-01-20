@@ -8,32 +8,30 @@ public class Maya : MonoBehaviour {
 	private Animator anim;
 	private GameObject map;
 	private NavMeshAgent nav;
-	private GameObject runSword;
-	private GameObject attackSword;
-
+	public Weapon weaponPrefab;
+	public Weapon weapon;
 	[HideInInspector]public Stats stats;
-
 	private Vector3 destination;
 	public GameObject targetEnemy;
 	private float distToEnemy;
-	public int health;
-	private bool attack;
+	private int health;
+	private bool isAttacking;
 	private bool move;
-	public float hitRate = 1;
-	private float counter;
-	// Use this for initialization
 	private bool dead = false;
+	private Coroutine routineAttack = null;
+	private Transform rightHandPlace;
+	// Use this for initialization
 	void Start () {
+		rightHandPlace = GameObject.Find("WeaponRightHandPlace").GetComponent<Transform>();
 		anim = gameObject.GetComponent<Animator>();
 		nav = gameObject.GetComponent<NavMeshAgent>();
 		stats = gameObject.GetComponent<Stats>();
 		map = GameObject.Find("Terrain");
-		runSword = GameObject.Find("RunSword");
-		attackSword = GameObject.Find("AttackSword");
+		weapon = GameObject.Instantiate(weaponPrefab);
+		weapon.gameObject.transform.parent = rightHandPlace.transform;
 		destination = transform.position;
-		attackSword.SetActive(false);
 		move = false;
-		attack = false;
+		isAttacking = false;
 		distToEnemy = 100;
 	}
 	
@@ -64,67 +62,46 @@ public class Maya : MonoBehaviour {
 					// Debug.Log("HIT ZOMBIE");
 					destination = hit.collider.gameObject.transform.position;
 					targetEnemy = hit.collider.gameObject;
-					attack = true;
+					isAttacking = true;
 					return;
 				}
 			}
 			if (map.GetComponent<Collider>().Raycast (ray, out hit, Mathf.Infinity)) {
 				destination = hit.point;
 				targetEnemy = null;
-				attack = false;
+				isAttacking = false;
 				move = true;
+				if (routineAttack != null) {
+					StopCoroutine(attack());
+					routineAttack = null;
+				}
 				return;
 			}
-
 		}
 	}
 
 	void manageAttack() {
-		if (!attack)
+		if (!isAttacking)
 			return;
 		distToEnemy = Vector3.Distance(targetEnemy.transform.position, transform.position);
 
 		if (distToEnemy < 2) {
 			transform.LookAt(targetEnemy.transform.position);
 			move = false;
-		} else
+			if (routineAttack == null)
+				routineAttack = StartCoroutine(attack());
+		} else {
+			StopCoroutine(attack());
+			routineAttack = null;
 			move = true;
+		}
 	}
 
 	void updateAnimator() {
-		if(attack && !move) {
-			attackSword.SetActive(true);
-			runSword.SetActive(false);
-			if (counter != 0) {
-				counter = System.Math.Max(counter - Time.deltaTime, 0);
-			} else if (counter == 0) {
-				Stats enemy = targetEnemy.GetComponent<Stats>();
-				int damage = stats.getDamage(enemy);
-				// Debug.Log(damage);
-				enemy.hp -= damage;
-				if (enemy.hp <= 0) {
-					stats.xp += enemy.xp;
-					stats.money += enemy.money;
-					if (stats.xp > stats.levelUpXp) {
-						stats.xp = 0;
-						stats.level++;
-						int newXPn = Mathf.RoundToInt(stats.levelUpXp * 1.5f);
-						stats.levelUpXp = newXPn;
-					}
-					attack = false;
-					targetEnemy = null;
-				}
-				counter = hitRate;
-			}
-		} else {
-			counter = 0.6f;
-			attackSword.SetActive(false);
-			runSword.SetActive(true);
-		}
 		anim.SetInteger("health", health);
 		anim.SetBool("isMoving", move);
-		anim.SetBool("attack", attack);
-		if (attack)
+		anim.SetBool("attack", isAttacking);
+		if (isAttacking)
 			anim.SetFloat("attackRange", distToEnemy);
 		else
 			anim.SetFloat("attackRange", 1000);
@@ -144,6 +121,36 @@ public class Maya : MonoBehaviour {
 			gameObject.transform.Translate(Vector3.down * 0.05f);
         	yield return new WaitForSeconds(.05f);
 		}
-		// Destroy(gameObject);
     }
+	IEnumerator	attack() {
+		yield return new WaitForSeconds(weapon.getFirstHitTiming());
+		while(isAttacking) {
+			applyDamage();
+        	yield return new WaitForSeconds(weapon.getRegularHitTiming());
+		}
+    }
+
+	void applyDamage() {
+		Stats enemy = targetEnemy.GetComponent<Stats>();
+		int damage = stats.getDamage(enemy);
+		Debug.Log(damage);
+		enemy.hp -= damage;
+		if (enemy.hp <= 0) {
+			StopCoroutine(attack());
+			routineAttack = null;
+			stats.xp += enemy.xp;
+			stats.money += enemy.money;
+			isAttacking = false;
+			targetEnemy = null;
+			if (stats.xp > stats.levelUpXp)
+				levelUp();
+		}
+	}
+
+	void levelUp() {
+		stats.xp = 0;
+		stats.level++;
+		int newXPn = Mathf.RoundToInt(stats.levelUpXp * 1.5f);
+		stats.levelUpXp = newXPn;
+	}
 }
