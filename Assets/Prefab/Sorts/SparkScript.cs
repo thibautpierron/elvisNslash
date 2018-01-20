@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TornadeScript : Sort {
+public class SparkScript : Sort {
 
 	private float				delay = 0.5f;
-	private int					damage = 2;
-	private int					time = 7;
+	private int					damage = 150;
 	private List<Stats>			enemy;
 
 	// Use this for initialization
@@ -20,15 +19,12 @@ public class TornadeScript : Sort {
 	}
 
 	public override IEnumerator Execute() {
-		for (int i = 0 ; i < time / delay ; i++)
+		yield return new WaitForSeconds(delay);
+		foreach(Stats stat in enemy)
 		{
-			foreach(Stats stat in enemy)
-			{
-				stat.hp -= damage;
-				if (stat.hp < 0)
-					stat.hp = 0;
-			}
-			yield return new WaitForSeconds(delay);
+			stat.hp -= damage;
+			if (stat.hp < 0)
+				stat.hp = 0;
 		}
 		yield return new WaitForSeconds(5);
 		Destroy(clone.gameObject);
@@ -38,6 +34,7 @@ public class TornadeScript : Sort {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Zombie")
 		{
+			print("enter");
 			enemy.Add(other.gameObject.GetComponent<Stats>());
 		}
 	}
@@ -53,11 +50,10 @@ public class TornadeScript : Sort {
 		level++;
 		if (level == 1)
 			return ;
-		damage = (int)((float)damage * 1.5f);
-		time += 2;
+		damage = (int)((float)damage * 1.8f);
 	}
 
 	public override string Info() {
-		return "Make a bubble shield around you. Increase your armor";
+		return "Spark";
 	}
 }

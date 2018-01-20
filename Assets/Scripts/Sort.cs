@@ -10,6 +10,10 @@ public class Sort : MonoBehaviour {
 	public Maya				player;
 	public ParticleSystem	PS;
 	public ParticleSystem	clone;
+	public int				level = 0;
+	public float			restorationDelay;
+	public int				positionInTab;
+	public Texture			image;
 
 
 	// Use this for initialization
@@ -44,6 +48,7 @@ public class Sort : MonoBehaviour {
 			{
 				clone = Instantiate(PS, player.transform.position, new Quaternion(0,0,0,0));
 			}
+			player.GetComponent<MayaSorts>().LastSending[positionInTab] = Time.realtimeSinceStartup;
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
 			return ;
@@ -54,6 +59,7 @@ public class Sort : MonoBehaviour {
 		if (Input.GetMouseButton(0) && AZ)
 		{
 			clone = Instantiate(PS, hit.point, new Quaternion(0,0,0,0));
+			player.GetComponent<MayaSorts>().LastSending[positionInTab] = Time.realtimeSinceStartup;
 			transform.position = hit.point;
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
@@ -62,5 +68,13 @@ public class Sort : MonoBehaviour {
 
 	public virtual IEnumerator Execute() {
 		yield return new WaitForSeconds(0);
+	}
+
+	public virtual void Upgrade() {
+		return ;
+	}
+
+	public virtual string Info() {
+		return "";
 	}
 }

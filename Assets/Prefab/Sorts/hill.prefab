@@ -369,6 +369,10 @@ MonoBehaviour:
   player: {fileID: 0}
   PS: {fileID: 198942964289327240, guid: 65b6be31dbc22406dac445a6d229f187, type: 2}
   clone: {fileID: 0}
+  level: 0
+  restorationDelay: 60
+  positionInTab: 0
+  image: {fileID: 2800000, guid: e5c733f0a79e04ba29c411727db8f0fd, type: 3}
 --- !u!135 &135288400237948338
 SphereCollider:
   m_ObjectHideFlags: 1

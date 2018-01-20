@@ -7,11 +7,11 @@ public class hillScript : Sort {
 	private float				delay = 2.0f;
 	private int					damage = 5;
 	private int					time = 15;
-	private List<Stats>			player;
+	private List<Stats>			players;
 
 	// Use this for initialization
 	void Start () {
-		player = new List<Stats>();
+		players = new List<Stats>();
 	}
 	
 	// Update is called once per frame
@@ -22,7 +22,7 @@ public class hillScript : Sort {
 	public override IEnumerator Execute() {
 		for (int i = 0 ; i < time / delay ; i++)
 		{
-			foreach(Stats stat in player)
+			foreach(Stats stat in players)
 			{
 				stat.hp += damage;
 				if (stat.hp > stat.hpMax)
@@ -38,14 +38,27 @@ public class hillScript : Sort {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "Player")
 		{
-			player.Add(other.gameObject.GetComponent<Stats>());
+			players.Add(other.gameObject.GetComponent<Stats>());
 		}
 	}
 
 	void OnTriggerExit(Collider other) {
 		if (other.tag == "Player")
 		{
-			player.Remove(other.gameObject.GetComponent<Stats>());
+			players.Remove(other.gameObject.GetComponent<Stats>());
 		}
+	}
+
+	public override void Upgrade() {
+		level++;
+		if (level == 1)
+			return ;
+		damage = (int)((float)damage * 1.5f);
+		time += 2;
+		delay -= 0.2f;
+	}
+
+	public override string Info() {
+		return "Heal zone";
 	}
 }

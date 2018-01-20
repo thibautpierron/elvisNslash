@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour {
 	public Text xp;
 	public Text level;
 
+	public RawImage[] sortsImages;
+
 	public Image enemyStatsPanel;
 	public Slider enemySlider;
 	public Text enemyHealth;
@@ -52,6 +54,21 @@ public class UIManager : MonoBehaviour {
 			Camera.main.GetComponent<Cam>().switchInventoryView();
 		enemyStats();
 		mayaStats();
+		mayaSorts();
+	}
+
+	void mayaSorts() {
+		Sort[] sorts = maya.GetComponent<MayaSorts>().sorts;
+		float[] lastSend = maya.GetComponent<MayaSorts>().LastSending;
+
+		for (int i = 0 ; i < 4 ; i++)
+		{
+			if (lastSend[i] + sorts[i].restorationDelay < Time.realtimeSinceStartup)
+				sortsImages[i].transform.GetChild(0).GetComponent<Text>().text = "";
+			else
+				sortsImages[i].transform.GetChild(0).GetComponent<Text>().text = ((int)(lastSend[i] + sorts[i].restorationDelay - Time.realtimeSinceStartup)).ToString();
+			sortsImages[i].texture = sorts[i].image;
+		}
 	}
 
 	void mayaStats() {
