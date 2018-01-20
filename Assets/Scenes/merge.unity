@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb63fa0235ac48f3b6a862b51691cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySpot: {fileID: 1802224422}
+  inventorySpot: {fileID: 1022267500}
   mixTable: {fileID: 1883240684}
   mode: 0
 --- !u!1 &621899153
@@ -1772,6 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a268304fabb04523a583d464289aca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 675322337}
 --- !u!4 &621899155
 Transform:
   m_ObjectHideFlags: 0
@@ -1993,7 +1994,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1022267504}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -3177,7 +3178,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1

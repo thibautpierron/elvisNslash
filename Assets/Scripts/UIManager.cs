@@ -16,14 +16,14 @@ public class UIManager : MonoBehaviour {
 
 	private GameObject deathPanel;
 	private GameObject inGameUI;
-	private GameObject inventoryUI;
+	public GameObject inventoryUI;
 	// Use this for initialization
 	void Start () {
 		maya = GameObject.Find("Maya").GetComponent<Stats>();
 		deathPanel = GameObject.Find("DeathPanel");
 		deathPanel.gameObject.SetActive(false);
 		inGameUI = GameObject.Find("InGameUICanvas");
-		inventoryUI = GameObject.Find("InventoryUICanvas");
+		// inventoryUI = GameObject.Find("InventoryUICanvas");
 		state = State.PLAY;
 	}
 	
@@ -61,8 +61,5 @@ public class UIManager : MonoBehaviour {
 					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 				break;
 		}
-		// if (death) {
-		// 	return;
-		// }
 	}
 }
