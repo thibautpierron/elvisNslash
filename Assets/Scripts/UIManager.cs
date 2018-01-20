@@ -113,4 +113,12 @@ public class UIManager : MonoBehaviour {
 			}
 		}
 	}
+
+	public void mainMenu() {
+		SceneManager.LoadScene(0);
+	}
+
+	public void quit() {
+		Application.Quit();
+	}
 }
