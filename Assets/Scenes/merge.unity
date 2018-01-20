@@ -395,13 +395,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2103550353}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 489535385}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26790935, y: 0.12459236}
   m_AnchorMax: {x: 0.33355936, y: 0.23576419}
-  m_AnchoredPosition: {x: 193.07146, y: 72.251495}
-  m_SizeDelta: {x: 42.14731, y: 44.57991}
+  m_AnchoredPosition: {x: -74.28139, y: -17.837646}
+  m_SizeDelta: {x: -16.215546, y: -11.006012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &146182264 stripped
 Transform:
@@ -558,13 +558,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1175967828}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 489535385}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.44297132, y: 0.12505773}
   m_AnchorMax: {x: 0.50862134, y: 0.23622957}
-  m_AnchoredPosition: {x: 305.46124, y: 72.43811}
-  m_SizeDelta: {x: 42.14734, y: 44.57991}
+  m_AnchoredPosition: {x: -117.52173, y: -17.883713}
+  m_SizeDelta: {x: -16.215515, y: -11.005997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &220811812
 GameObject:
@@ -1317,6 +1317,10 @@ RectTransform:
   - {fileID: 941770264}
   - {fileID: 891415172}
   - {fileID: 1332399297}
+  - {fileID: 88880173}
+  - {fileID: 1749025690}
+  - {fileID: 217127854}
+  - {fileID: 1822968367}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2037,8 +2041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characPanel: {fileID: 267628101}
-  inventoryPanel: {fileID: 1765512368}
-  talentPanel: {fileID: 1327940401}
+  inventoryPanel: {fileID: 1327940401}
+  talentPanel: {fileID: 1765512368}
   menuPanel: {fileID: 922933700}
   selected: 0
 --- !u!1 &699050216
@@ -3068,7 +3072,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 675322342}
-        m_MethodName: selectInventory
+        m_MethodName: selectTalent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3998,7 +4002,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 675322342}
-        m_MethodName: selectTalent
+        m_MethodName: selectInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5374,13 +5378,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 31738879}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 489535385}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3533285, y: 0.12481753}
   m_AnchorMax: {x: 0.4189785, y: 0.23598936}
-  m_AnchoredPosition: {x: 247.91055, y: 72.34178}
-  m_SizeDelta: {x: 42.147293, y: 44.579903}
+  m_AnchoredPosition: {x: -95.379944, y: -17.85994}
+  m_SizeDelta: {x: -16.21556, y: -11.00602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1749314658 stripped
 Transform:
@@ -5545,13 +5549,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 994726138}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 489535385}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.53506577, y: 0.12531325}
   m_AnchorMax: {x: 0.6007158, y: 0.2364851}
-  m_AnchoredPosition: {x: 364.58588, y: 72.540565}
-  m_SizeDelta: {x: 42.14731, y: 44.57991}
+  m_AnchoredPosition: {x: -140.26904, y: -17.909027}
+  m_SizeDelta: {x: -16.215607, y: -11.006012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1841221320
 GameObject:

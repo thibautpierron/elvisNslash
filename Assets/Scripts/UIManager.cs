@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour {
 	private GameObject deathPanel;
 	private GameObject inGameUI;
 	public GameObject inventoryUI;
+
+	private MenuUI.Selected currentMenu = MenuUI.Selected.NONE;
 	// Use this for initialization
 	void Start () {
 		maya = GameObject.Find("Maya").GetComponent<Stats>();
@@ -41,25 +43,74 @@ public class UIManager : MonoBehaviour {
 				}
 				if (Input.GetKeyDown("space"))
 					Camera.main.GetComponent<Cam>().switchDistanceView();
-				if (Input.GetKeyDown("c")) {
-					Camera.main.GetComponent<Cam>().switchInventoryView();
-					state = State.INVENTORY;
-				}
+				getInput();
 				break;
 			case State.INVENTORY:
 				maya.GetComponent<Maya>().inMenu = true;
 				inGameUI.gameObject.SetActive(false);
 				inventoryUI.gameObject.SetActive(true);
-				if (Input.GetKeyDown("c")) {
-					Camera.main.GetComponent<Cam>().switchInventoryView();
-					state = State.PLAY;
-				}
+				getInput();
 				break;
 			case State.DEATH:
 				maya.GetComponent<Maya>().inMenu = true;
 				if (Input.GetKey("space"))
 					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 				break;
+		}
+	}
+
+	void getInput() {
+		if (Input.GetKeyDown("c")) {
+			if (currentMenu == MenuUI.Selected.CHARAC) {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.NONE);
+				Camera.main.GetComponent<Cam>().closeInventory();
+				state = State.PLAY;
+				currentMenu = MenuUI.Selected.NONE;
+			} else {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.CHARAC);
+				Camera.main.GetComponent<Cam>().openInventory();
+				state = State.INVENTORY;
+				currentMenu = MenuUI.Selected.CHARAC;
+			}
+		}
+		else if (Input.GetKeyDown("i")) {
+			if (currentMenu == MenuUI.Selected.INVENTORY) {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.NONE);
+				Camera.main.GetComponent<Cam>().closeInventory();
+				state = State.PLAY;
+				currentMenu = MenuUI.Selected.NONE;
+			} else {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.INVENTORY);
+				Camera.main.GetComponent<Cam>().openInventory();
+				state = State.INVENTORY;
+				currentMenu = MenuUI.Selected.INVENTORY;
+			}
+		}
+		else if (Input.GetKeyDown("n")) {
+			if (currentMenu == MenuUI.Selected.TALENT) {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.NONE);
+				Camera.main.GetComponent<Cam>().closeInventory();
+				state = State.PLAY;
+				currentMenu = MenuUI.Selected.NONE;
+			} else {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.TALENT);
+				Camera.main.GetComponent<Cam>().openInventory();
+				state = State.INVENTORY;
+				currentMenu = MenuUI.Selected.TALENT;
+			}
+		}
+		else if (Input.GetKeyDown(KeyCode.Escape)) {
+			if (currentMenu == MenuUI.Selected.MENU) {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.NONE);
+				Camera.main.GetComponent<Cam>().closeInventory();
+				state = State.PLAY;
+				currentMenu = MenuUI.Selected.NONE;
+			} else {
+				inventoryUI.GetComponent<MenuUI>().select(MenuUI.Selected.MENU);
+				Camera.main.GetComponent<Cam>().openInventory();
+				state = State.INVENTORY;
+				currentMenu = MenuUI.Selected.MENU;
+			}
 		}
 	}
 }

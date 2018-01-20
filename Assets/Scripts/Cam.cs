@@ -66,4 +66,11 @@ public class Cam : MonoBehaviour {
 				break;
 		}
 	}
+
+	public void openInventory() {
+		mode = Mode.INVENTORY;
+	}
+	public void closeInventory() {
+		mode = Mode.NORMAL;
+	}
 }
