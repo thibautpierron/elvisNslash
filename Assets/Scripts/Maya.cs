@@ -10,6 +10,8 @@ public class Maya : MonoBehaviour {
 	private NavMeshAgent nav;
 	public Weapon weaponPrefab;
 	public Weapon weapon;
+	public Weapon weaponUnused;
+	public Weapon guitar;
 	[HideInInspector]public Stats stats;
 	private Vector3 destination;
 	public GameObject targetEnemy;
@@ -20,15 +22,52 @@ public class Maya : MonoBehaviour {
 	private bool dead = false;
 	private Coroutine routineAttack = null;
 	private Transform rightHandPlace;
+	private Transform leftHandPlace;
+	private Transform weaponBackPlace;
+	private Transform guitarBackPlace;
+	private Transform beltPlace;
+
+	// private Transform originPos;
 	// Use this for initialization
 	void Start () {
 		rightHandPlace = GameObject.Find("WeaponRightHandPlace").GetComponent<Transform>();
+		leftHandPlace = GameObject.Find("WeaponLeftHandPlace").GetComponent<Transform>();
+		weaponBackPlace = GameObject.Find("WeaponBackPlace").GetComponent<Transform>();
+		guitarBackPlace = GameObject.Find("GuitarBackPlace").GetComponent<Transform>();
+		beltPlace = GameObject.Find("BeltPlace").GetComponent<Transform>();
+
 		anim = gameObject.GetComponent<Animator>();
 		nav = gameObject.GetComponent<NavMeshAgent>();
 		stats = gameObject.GetComponent<Stats>();
 		map = GameObject.Find("Terrain");
+
 		weapon = GameObject.Instantiate(weaponPrefab);
+		weaponUnused = GameObject.Instantiate(weaponPrefab);
 		weapon.gameObject.transform.parent = rightHandPlace.transform;
+
+		guitar = GameObject.Instantiate(guitar);
+		guitar.transform.position = guitarBackPlace.transform.position;
+		guitar.transform.rotation = guitarBackPlace.transform.rotation;
+		guitar.gameObject.transform.parent = guitarBackPlace.transform;
+
+		switch (weapon.type) {
+			case Weapon.Type.ONE_HAND:
+				weaponUnused.transform.position = beltPlace.transform.position;
+				weaponUnused.transform.rotation = beltPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+			case Weapon.Type.TWO_HAND:
+				weaponUnused.transform.position = weaponBackPlace.transform.position;
+				weaponUnused.transform.rotation = weaponBackPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = weaponBackPlace.transform; break;
+			case Weapon.Type.DOUBLE:
+				weaponUnused.transform.position = beltPlace.transform.position;
+				weaponUnused.transform.rotation = beltPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+		}
+
+		weapon.gameObject.SetActive(false);
+		weaponUnused.gameObject.SetActive(true);
+
 		destination = transform.position;
 		move = false;
 		isAttacking = false;
@@ -81,16 +120,20 @@ public class Maya : MonoBehaviour {
 	}
 
 	void manageAttack() {
-		if (!isAttacking)
+		if (!isAttacking) {
+			manageWeaponPlace(false);
 			return;
+		}
 		distToEnemy = Vector3.Distance(targetEnemy.transform.position, transform.position);
 
 		if (distToEnemy < 2) {
+			manageWeaponPlace(true);
 			transform.LookAt(targetEnemy.transform.position);
 			move = false;
 			if (routineAttack == null)
 				routineAttack = StartCoroutine(attack());
 		} else {
+			manageWeaponPlace(false);
 			StopCoroutine(attack());
 			routineAttack = null;
 			move = true;
@@ -99,6 +142,7 @@ public class Maya : MonoBehaviour {
 
 	void updateAnimator() {
 		anim.SetInteger("health", health);
+		anim.SetInteger("attackType", (int)weapon.type);
 		anim.SetBool("isMoving", move);
 		anim.SetBool("attack", isAttacking);
 		if (isAttacking)
@@ -152,5 +196,35 @@ public class Maya : MonoBehaviour {
 		stats.level++;
 		int newXPn = Mathf.RoundToInt(stats.levelUpXp * 1.5f);
 		stats.levelUpXp = newXPn;
+	}
+
+	void manageWeaponPlace(bool attacking) {
+		// if (attacking) {
+		// 	weapon.gameObject.transform.parent = rightHandPlace.transform;
+		// 	weapon.transform.position = originPos;
+		// 	weapon.transform.rotation = originRot;
+		// } else {
+			// switch (weapon.type) {
+			// 	case Weapon.Type.ONE_HAND:
+			// 		weapon.transform.position = beltPlace.transform.position;
+			// 		weapon.transform.rotation = beltPlace.transform.rotation;
+			// 		weapon.gameObject.transform.parent = beltPlace.transform; break;
+			// 	case Weapon.Type.TWO_HAND:
+			// 		weapon.transform.position = weaponBackPlace.transform.position;
+			// 		weapon.transform.rotation = weaponBackPlace.transform.rotation;
+			// 		weapon.gameObject.transform.parent = weaponBackPlace.transform; break;
+			// 	case Weapon.Type.DOUBLE:
+			// 		weapon.transform.position = beltPlace.transform.position;
+			// 		weapon.transform.rotation = beltPlace.transform.rotation;
+			// 		weapon.gameObject.transform.parent = beltPlace.transform; break;
+			// }
+		// }
+		if (attacking) {
+			weapon.gameObject.SetActive(true);
+			weaponUnused.gameObject.SetActive(false);
+		} else {
+			weapon.gameObject.SetActive(false);
+			weaponUnused.gameObject.SetActive(true);
+		}
 	}
 }
