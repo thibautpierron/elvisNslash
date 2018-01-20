@@ -10,6 +10,7 @@ public class InGameUI : MonoBehaviour {
 	public Text health;
 	public Text xp;
 	public Text level;
+	public RawImage[] sortsImages;
 
 	public Image enemyStatsPanel;
 	public Slider enemySlider;
