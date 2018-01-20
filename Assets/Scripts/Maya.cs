@@ -21,6 +21,7 @@ public class Maya : MonoBehaviour {
 	private bool isAttacking;
 	private bool move;
 	private bool dead = false;
+	public bool inMenu = false;
 	private Coroutine routineAttack = null;
 	private Transform rightHandPlace;
 	private Transform leftHandPlace;
@@ -44,10 +45,6 @@ public class Maya : MonoBehaviour {
 
 		weapon = GameObject.Instantiate(weaponPrefab);
 		weaponUnused = GameObject.Instantiate(weaponPrefab);
-		// if (weapon.gameObject.tag == "LaserSaber") {
-		// 	weapon.GetComponentInChildren<LaserSwordScript>().Activate();
-		// 	weaponUnused.GetComponentInChildren<LaserSwordScript>().Deactivate();
-		// }
 		weapon.gameObject.transform.parent = rightHandPlace.transform;
 
 		guitar = GameObject.Instantiate(guitar);
@@ -82,7 +79,7 @@ public class Maya : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		health = stats.hp;
-		if (dead)
+		if (dead || inMenu)
 			return;
 		clickHandler();
 		manageAttack();

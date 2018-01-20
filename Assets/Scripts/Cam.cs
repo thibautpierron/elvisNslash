@@ -11,25 +11,30 @@ public class Cam : MonoBehaviour {
 	}
 	private GameObject maya;
 	private Vector3 offset;
+	public GameObject inventorySpot;
+	public GameObject mixTable;
 
 	public Mode mode = Mode.NORMAL;
 	// Use this for initialization
 	void Start () {
 		maya = GameObject.Find("Maya");
 		offset = transform.position - maya.transform.position;
+		inventorySpot.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		switch (mode) {
 			case Mode.NORMAL:
+				inventorySpot.SetActive(false);
 				transform.position = maya.transform.position + offset;
 				break;
 			case Mode.CLOSE: 
+				inventorySpot.SetActive(false);
 				transform.position = maya.transform.position + offset / 3;
 				break;
 			case Mode.INVENTORY:
-				transform.position = maya.transform.position + offset / 3 + new Vector3(2, 0, 0);
+				inventorySpot.SetActive(true);
 				break;
 		}
 	}
