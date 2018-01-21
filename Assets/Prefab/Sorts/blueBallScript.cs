@@ -72,6 +72,6 @@ public class blueBallScript : Sort {
 	}
 
 	public override string Info() {
-		return "Fait une bulle de protection autour de vous. Augmente votre armure de " + armor.ToString() + " pendant ";
+		return "Fait une bulle de protection autour de vous. Augmente votre armure de  pendant ";
 	}
 }

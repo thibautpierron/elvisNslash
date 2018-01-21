@@ -20,6 +20,8 @@ public class Zombie : MonoBehaviour {
 	private bool dead = false;
 	public Spawner spawner;
 
+	public Weapon[] dropPossibilities;
+
 	public float hitRate = 1;
 	private float counter;
 	// Use this for initialization
@@ -47,6 +49,7 @@ public class Zombie : MonoBehaviour {
 		if (health <= 0) {
 			nav.enabled = false;
 			dead = true;
+			drop();
 			StartCoroutine(deathAnimation());
 		}
 	}
@@ -115,4 +118,11 @@ public class Zombie : MonoBehaviour {
 		spawner.spawnZombie();
 		Destroy(gameObject);
     }
-}
+
+	void drop() {
+		// add drop rate;
+		int r = Random.Range(0, dropPossibilities.Length);
+		Weapon w = GameObject.Instantiate(dropPossibilities[r], transform.position, Quaternion.identity);
+		w.setOnGround();
+	}
+ }
