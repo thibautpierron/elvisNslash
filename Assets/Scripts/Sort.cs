@@ -16,7 +16,7 @@ public class Sort : MonoBehaviour {
 	public Texture			image;
 
 	public AudioSource		audio;
-	public AudioClip		sound;
+	public AudioClip[]		sound;
 
 
 	// Use this for initialization
@@ -51,6 +51,8 @@ public class Sort : MonoBehaviour {
 			{
 				clone = Instantiate(PS, player.transform.position, new Quaternion(0,0,0,0));
 			}
+			audio.clip = sound[Random.Range(0,sound.Length)];
+			audio.Play();
 			player.GetComponent<MayaSorts>().LastSending[positionInTab] = Time.realtimeSinceStartup;
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
@@ -64,6 +66,8 @@ public class Sort : MonoBehaviour {
 			clone = Instantiate(PS, hit.point, new Quaternion(0,0,0,0));
 			player.GetComponent<MayaSorts>().LastSending[positionInTab] = Time.realtimeSinceStartup;
 			transform.position = hit.point;
+			audio.clip = sound[Random.Range(0,sound.Length)];
+			audio.Play();
 			StartCoroutine(Execute());
 			Destroy(AZ.gameObject);
 		}

@@ -94,6 +94,10 @@ public class Maya : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKey("u") && Input.GetKeyDown("p"))
+			stats.xp = stats.levelUpXp;
+
 		health = stats.hp;
 		if (dead || inMenu)
 			return;
@@ -208,6 +212,7 @@ public class Maya : MonoBehaviour {
 		yield return new WaitForSeconds(weaponUsed.getFirstHitTiming());
 		while(isAttacking) {
 			applyDamage();
+			GetComponent<AudioSource>().Play();
         	yield return new WaitForSeconds(weaponUsed.getRegularHitTiming());
 		}
     }

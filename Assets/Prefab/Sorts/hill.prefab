@@ -373,6 +373,14 @@ MonoBehaviour:
   restorationDelay: 60
   positionInTab: 0
   image: {fileID: 2800000, guid: e5c733f0a79e04ba29c411727db8f0fd, type: 3}
+  audio: {fileID: 0}
+  sound:
+  - {fileID: 8300000, guid: 3e1d85f7106e64dbdac0309c1cef6aae, type: 3}
+  - {fileID: 8300000, guid: af70eead912844947962a577f44606b2, type: 3}
+  - {fileID: 8300000, guid: 420ee1fe625fa4e46b1aa7187d2d0c6d, type: 3}
+  - {fileID: 8300000, guid: 117c7d6648bc540a8bed314cf843d457, type: 3}
+  - {fileID: 8300000, guid: 44cb583f589944a24abcd16adfe9fd84, type: 3}
+  - {fileID: 8300000, guid: 4fbf05f4f6fb846989922130d36ad67f, type: 3}
 --- !u!135 &135288400237948338
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -373,6 +373,9 @@ MonoBehaviour:
   restorationDelay: 20
   positionInTab: 0
   image: {fileID: 2800000, guid: 63f52b698a74b4988b0ab126f4a842a1, type: 3}
+  audio: {fileID: 0}
+  sound:
+  - {fileID: 8300000, guid: 866f56e0d9e564b49a9d382cd7c15746, type: 3}
   damage: 5
 --- !u!136 &136440557077942192
 CapsuleCollider:
