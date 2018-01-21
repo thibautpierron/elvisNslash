@@ -11,23 +11,26 @@ public class InventoryMenu : MonoBehaviour {
 	public RawImage weaponIcon;
 	public Text weaponText;
 
-	private Inventory inventory;
+	public Inventory inventory;
 	// Use this for initialization
 	void Start () {
 		GameObject[] icons = GameObject.FindGameObjectsWithTag("ItemInventory");
 		for (int i = 0; i < 10; i++) {
 			stashIcons[i] = icons[i].GetComponent<RawImage>();
 		}
-		inventory = GameObject.Find("Maya").GetComponent<Inventory>();
 		refresh();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		GameObject[] icons = GameObject.FindGameObjectsWithTag("ItemInventory");
+		for (int i = 0; i < 10; i++) {
+			stashIcons[i] = icons[i].GetComponent<RawImage>();
+		}
+		refresh();
 	}
 
-	void refresh() {
+	public void refresh() {
 		Weapon[] weapons = inventory.weapons;
 		for (int i = 0; i < 10; i++) {
 			if (weapons[i]) {
@@ -37,8 +40,8 @@ public class InventoryMenu : MonoBehaviour {
 				stashIcons[i].color = new Color(0.3f, 0.3f, 0.3f);
 			}
 		}
-		Weapon w = inventory.getCurrentWeapon();
-		Weapon g = inventory.getCurrentGuitar();
+		Weapon w = inventory.getCurrentWeaponRef();
+		Weapon g = inventory.getCurrentGuitarRef();
 
 		if (w) {
 			weaponIcon.color = new Color(1, 1, 1);
@@ -63,11 +66,11 @@ public class InventoryMenu : MonoBehaviour {
 			return;
 
 		if (weapons[n].tag == "Guitar") {
-			Weapon tmp = inventory.getCurrentGuitar();
+			Weapon tmp = inventory.getCurrentGuitarRef();
 			inventory.currentGuitar = weapons[n];
 			weapons[n] = tmp; 
 		} else {
-			Weapon tmp = inventory.getCurrentWeapon();
+			Weapon tmp = inventory.getCurrentWeaponRef();
 			inventory.currentWeapon = weapons[n];
 			weapons[n] = tmp; 
 		}

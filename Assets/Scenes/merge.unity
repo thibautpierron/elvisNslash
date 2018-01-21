@@ -113,6 +113,66 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: c688aa458552c4ef2a39b990cea24bb1, type: 2}
+--- !u!1 &14058667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1997931964541474, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 14058668}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeB1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14058668
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4709752048570118, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 14058667}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000006, y: -8.688509, z: 0.000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 520671113}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &24356161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1129582779587106, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 24356162}
+  m_Layer: 0
+  m_Name: newVegas_Left_PantLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24356162
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4541792323472074, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24356161}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.281482, y: -8.977983, z: -1.10887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413234125}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &31738878
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +275,22 @@ Transform:
   m_Father: {fileID: 958208531}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &58083210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1744574380421474, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 958208531}
+  m_Layer: 0
+  m_Name: newVegas_LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &60012653
 Prefab:
   m_ObjectHideFlags: 0
@@ -403,6 +479,68 @@ RectTransform:
   m_AnchoredPosition: {x: -74.28139, y: -17.837646}
   m_SizeDelta: {x: -16.215546, y: -11.006012}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &94792372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1136493842625742, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 94792373}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandRing2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94792373
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4126827004543596, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94792372}
+  m_LocalRotation: {x: -0.08914093, y: 0.0659388, z: 0.32957402, w: 0.9375964}
+  m_LocalPosition: {x: -2.582435, y: -0.710152, z: -0.544993}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children:
+  - {fileID: 325982134}
+  m_Father: {fileID: 1950258727}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &120930249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1986371440875184, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 120930250}
+  m_Layer: 0
+  m_Name: newVegas_RightHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &120930250
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4861446750629878, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 120930249}
+  m_LocalRotation: {x: 0.001912069, y: -0.06042311, z: -0.0075299507, w: 0.99814266}
+  m_LocalPosition: {x: 6.625811, y: -0.223518, z: 2.471421}
+  m_LocalScale: {x: 1.0000004, y: 0.9999997, z: 1.0000001}
+  m_Children:
+  - {fileID: 458195471}
+  m_Father: {fileID: 1407883041}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &146182264 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4904550902132680, guid: 7c11569f6d8bd4048b317189defdb4d2,
@@ -413,6 +551,52 @@ Transform:
   m_PrefabParentObject: {fileID: 4904550902132680, guid: 7c11569f6d8bd4048b317189defdb4d2,
     type: 2}
   m_PrefabInternal: {fileID: 60012653}
+--- !u!1 &167869899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1644205167069318, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 167869900}
+  m_Layer: 0
+  m_Name: newVegas_Right_PantLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &167869900
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4175539845322590, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 167869899}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.279258, y: -8.978161, z: -1.108888}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1554640541}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &170028350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1647227088133348, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1061017126}
+  m_Layer: 0
+  m_Name: newVegas_RightUpLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &170102866
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +682,67 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &174961316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1457998744294694, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 174961317}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandMiddle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &174961317
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4635056492342008, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174961316}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.584319, y: 0.057678, z: -0.330443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1803566081}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182622840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1252270578053572, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 182622841}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandPinky1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182622841
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4775897933443708, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 182622840}
+  m_LocalRotation: {x: -0.02050135, y: 0.09678326, z: 0.017612327, w: 0.99493843}
+  m_LocalPosition: {x: -15.713015, y: -1.058274, z: -8.049928}
+  m_LocalScale: {x: 1.0000004, y: 0.99999994, z: 0.9999997}
+  m_Children:
+  - {fileID: 1017623699}
+  m_Father: {fileID: 958208531}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217127851
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +811,39 @@ RectTransform:
   m_AnchoredPosition: {x: -117.52173, y: -17.883713}
   m_SizeDelta: {x: -16.215515, y: -11.005997}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &228774493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1123276108550626, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 228774494}
+  m_Layer: 0
+  m_Name: newVegas_RightForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &228774494
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4057815792491354, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 228774493}
+  m_LocalRotation: {x: 0.24777347, y: -0.32452655, z: -0.12182786, w: 0.9046816}
+  m_LocalPosition: {x: 29.59384, y: 0, z: -4.673203}
+  m_LocalScale: {x: 1, y: 0.9999995, z: 0.9999999}
+  m_Children:
+  - {fileID: 2049897218}
+  - {fileID: 904908004}
+  - {fileID: 1978242324}
+  m_Father: {fileID: 2053908519}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245500755
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +1113,409 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285142221}
+--- !u!1 &309307218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1359943614848458, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 309307219}
+  m_Layer: 0
+  m_Name: newVegas_RightHandIndex3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309307219
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4593920647359918, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309307218}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.807623, y: -0.034589, z: 0.457391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1520511417}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &314406020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1618242159453398, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 314406021}
+  m_Layer: 0
+  m_Name: newVegas_LeftFoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &314406021
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4069108730402130, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314406020}
+  m_LocalRotation: {x: -0.24802922, y: -0.001148567, z: 0.09629778, w: 0.9639538}
+  m_LocalPosition: {x: -2.20756, y: -31.86177, z: -4.336292}
+  m_LocalScale: {x: 1.0000001, y: 1.0000007, z: 0.9999995}
+  m_Children:
+  - {fileID: 324254721}
+  m_Father: {fileID: 413234125}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &324254720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1904510434586876, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 324254721}
+  m_Layer: 0
+  m_Name: newVegas_LeftToeBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &324254721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4098065190631870, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324254720}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.94298, y: -26.721954, z: 15.023476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 314406021}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &325982133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1967812161275498, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 325982134}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandRing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &325982134
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4852514300603126, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 325982133}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.050348, y: 0.119144, z: -0.884829}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 94792373}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &329378038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1294354443636220, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 329378039}
+  m_Layer: 0
+  m_Name: newVegas_Right_Peck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &329378039
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4183319616147338, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329378038}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.2396, y: -5.13219, z: 25.482594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &330433559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1733497799753102, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 330433560}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandIndex2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &330433560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4299046535315134, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330433559}
+  m_LocalRotation: {x: 0.01929569, y: -0.017346254, z: 0.27697697, w: 0.96052617}
+  m_LocalPosition: {x: -3.171221, y: -0.35048, z: 0.09767}
+  m_LocalScale: {x: 1.0000004, y: 0.99999976, z: 1.0000005}
+  m_Children:
+  - {fileID: 1949130917}
+  m_Father: {fileID: 2033736286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &336615901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1888196344622550, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 336615902}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandThumb3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336615902
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4380884529262352, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 336615901}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.481198, y: 0.059347, z: 1.536795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1895832868}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &351146889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1798550025907854, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 351146890}
+  m_Layer: 0
+  m_Name: newVegas_RightShoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &351146890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4504566562441822, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351146889}
+  m_LocalRotation: {x: 0.026946485, y: 0.03789691, z: -0.12354991, w: 0.9912483}
+  m_LocalPosition: {x: 15.263037, y: 10.923431, z: -0.547705}
+  m_LocalScale: {x: 1.0000005, y: 1.0000002, z: 0.9999996}
+  m_Children:
+  - {fileID: 2053908519}
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352804837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1554385321241072, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 352804838}
+  - component: {fileID: 352804839}
+  m_Layer: 0
+  m_Name: newVegas_Elvis_MouthAnimGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &352804838
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4422197141109196, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352804837}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136931667}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &352804839
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137987031873904358, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 352804837}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100002, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300002, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_Bones:
+  - {fileID: 1612049357}
+  - {fileID: 1870405736}
+  - {fileID: 379350885}
+  - {fileID: 413234125}
+  - {fileID: 314406021}
+  - {fileID: 324254721}
+  - {fileID: 24356162}
+  - {fileID: 1061017126}
+  - {fileID: 1554640541}
+  - {fileID: 1277868115}
+  - {fileID: 1081263587}
+  - {fileID: 167869900}
+  - {fileID: 995996796}
+  - {fileID: 1847351584}
+  - {fileID: 1921186666}
+  - {fileID: 1633521759}
+  - {fileID: 1168260915}
+  - {fileID: 452551542}
+  - {fileID: 530424426}
+  - {fileID: 1388235957}
+  - {fileID: 698274644}
+  - {fileID: 1610306397}
+  - {fileID: 431659665}
+  - {fileID: 1083668870}
+  - {fileID: 368705580}
+  - {fileID: 958208531}
+  - {fileID: 1565444499}
+  - {fileID: 1895832868}
+  - {fileID: 336615902}
+  - {fileID: 2033736286}
+  - {fileID: 330433560}
+  - {fileID: 1949130917}
+  - {fileID: 1778517703}
+  - {fileID: 1803566081}
+  - {fileID: 174961317}
+  - {fileID: 1950258727}
+  - {fileID: 94792373}
+  - {fileID: 325982134}
+  - {fileID: 182622841}
+  - {fileID: 1017623699}
+  - {fileID: 1603785579}
+  - {fileID: 474038017}
+  - {fileID: 612456743}
+  - {fileID: 525337124}
+  - {fileID: 520671113}
+  - {fileID: 14058668}
+  - {fileID: 1951418489}
+  - {fileID: 829353255}
+  - {fileID: 351146890}
+  - {fileID: 2053908519}
+  - {fileID: 228774494}
+  - {fileID: 1978242324}
+  - {fileID: 1407883041}
+  - {fileID: 120930250}
+  - {fileID: 458195471}
+  - {fileID: 729211543}
+  - {fileID: 1520511417}
+  - {fileID: 309307219}
+  - {fileID: 1758670885}
+  - {fileID: 1628571293}
+  - {fileID: 1939305022}
+  - {fileID: 1705694525}
+  - {fileID: 1263493356}
+  - {fileID: 746047642}
+  - {fileID: 1084705825}
+  - {fileID: 1893675753}
+  - {fileID: 1652432191}
+  - {fileID: 2049897218}
+  - {fileID: 1716571920}
+  - {fileID: 904908004}
+  - {fileID: 809066113}
+  - {fileID: 722616710}
+  - {fileID: 648616107}
+  - {fileID: 1180798943}
+  - {fileID: 685702918}
+  - {fileID: 1288228687}
+  - {fileID: 1467936928}
+  - {fileID: 768173817}
+  - {fileID: 329378039}
+  - {fileID: 379404260}
+  - {fileID: 1108529981}
+  - {fileID: 1680103726}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1612049357}
+  m_AABB:
+    m_Center: {x: -9.92307, y: 61.659386, z: 20.13213}
+    m_Extent: {x: 16.629734, y: 11.78446, z: 12.430333}
+  m_DirtyAABB: 0
 --- !u!1 &353735273
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1676,133 @@ Transform:
   m_Father: {fileID: 1969966104}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
+--- !u!1 &368705579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1359470609250390, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 368705580}
+  m_Layer: 0
+  m_Name: newVegas_LeftForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &368705580
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4697957293977936, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 368705579}
+  m_LocalRotation: {x: 0.37120628, y: 0.14093906, z: 0.19739191, w: 0.89631385}
+  m_LocalPosition: {x: -29.593838, y: 0, z: -4.673203}
+  m_LocalScale: {x: 0.99999976, y: 1.0000001, z: 1}
+  m_Children:
+  - {fileID: 612456743}
+  - {fileID: 474038017}
+  - {fileID: 958208531}
+  m_Father: {fileID: 1083668870}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &379350884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1334880688254174, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 379350885}
+  m_Layer: 0
+  m_Name: newVegas_LeftUpLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379350885
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4677821534264250, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379350884}
+  m_LocalRotation: {x: -0.31956333, y: -0.111988395, z: -0.18107527, w: 0.92333615}
+  m_LocalPosition: {x: -18.735231, y: -5.666687, z: -4.541196}
+  m_LocalScale: {x: 1.0000004, y: 1.0000001, z: 1.0000006}
+  m_Children:
+  - {fileID: 413234125}
+  m_Father: {fileID: 1870405736}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &379404259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1391600694904196, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 379404260}
+  m_Layer: 0
+  m_Name: newVegas_Right_Collar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379404260
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4347091240293338, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 379404259}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.6251, y: 8.65581, z: 8.828094}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1108529981}
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &413234124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1806021977337964, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 413234125}
+  m_Layer: 0
+  m_Name: newVegas_LeftLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413234125
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4077968485296184, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413234124}
+  m_LocalRotation: {x: 0.55459225, y: -0.06330868, z: -0.074770525, w: 0.8263346}
+  m_LocalPosition: {x: -2.165257, y: -31.864662, z: 0.493051}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 0.9999999}
+  m_Children:
+  - {fileID: 24356162}
+  - {fileID: 314406021}
+  m_Father: {fileID: 379350885}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413345877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +2084,37 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &431659664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1873860617107092, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 431659665}
+  m_Layer: 0
+  m_Name: newVegas_LeftShoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &431659665
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4539708230889024, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431659664}
+  m_LocalRotation: {x: 0.041003373, y: 0.10174893, z: 0.043825813, w: 0.99299806}
+  m_LocalPosition: {x: -15.263037, y: 10.923431, z: -0.547705}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000002}
+  m_Children:
+  - {fileID: 1083668870}
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &447719401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +2189,226 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447719401}
+--- !u!1 &452551541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1245714852635430, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 452551542}
+  m_Layer: 0
+  m_Name: newVegas_Hair_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &452551542
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4168667263701330, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 452551541}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 3.231874, z: -17.524775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1168260915}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &458195470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1957317242335024, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 458195471}
+  m_Layer: 0
+  m_Name: newVegas_RightHandThumb3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458195471
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4209866908239804, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458195470}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.481198, y: 0.059347, z: 1.536795}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 120930250}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &460732986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1170363180484052, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 460732987}
+  - component: {fileID: 460732988}
+  m_Layer: 0
+  m_Name: newVegas_Elvis_EyesAnimGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460732987
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4410135485344950, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460732986}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136931667}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &460732988
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137941357787833200, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460732986}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100006, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300006, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_Bones:
+  - {fileID: 1612049357}
+  - {fileID: 1870405736}
+  - {fileID: 379350885}
+  - {fileID: 413234125}
+  - {fileID: 314406021}
+  - {fileID: 324254721}
+  - {fileID: 24356162}
+  - {fileID: 1061017126}
+  - {fileID: 1554640541}
+  - {fileID: 1277868115}
+  - {fileID: 1081263587}
+  - {fileID: 167869900}
+  - {fileID: 995996796}
+  - {fileID: 1847351584}
+  - {fileID: 1921186666}
+  - {fileID: 1633521759}
+  - {fileID: 1168260915}
+  - {fileID: 452551542}
+  - {fileID: 530424426}
+  - {fileID: 1388235957}
+  - {fileID: 698274644}
+  - {fileID: 1610306397}
+  - {fileID: 431659665}
+  - {fileID: 1083668870}
+  - {fileID: 368705580}
+  - {fileID: 958208531}
+  - {fileID: 1565444499}
+  - {fileID: 1895832868}
+  - {fileID: 336615902}
+  - {fileID: 2033736286}
+  - {fileID: 330433560}
+  - {fileID: 1949130917}
+  - {fileID: 1778517703}
+  - {fileID: 1803566081}
+  - {fileID: 174961317}
+  - {fileID: 1950258727}
+  - {fileID: 94792373}
+  - {fileID: 325982134}
+  - {fileID: 182622841}
+  - {fileID: 1017623699}
+  - {fileID: 1603785579}
+  - {fileID: 474038017}
+  - {fileID: 612456743}
+  - {fileID: 525337124}
+  - {fileID: 520671113}
+  - {fileID: 14058668}
+  - {fileID: 1951418489}
+  - {fileID: 829353255}
+  - {fileID: 351146890}
+  - {fileID: 2053908519}
+  - {fileID: 228774494}
+  - {fileID: 1978242324}
+  - {fileID: 1407883041}
+  - {fileID: 120930250}
+  - {fileID: 458195471}
+  - {fileID: 729211543}
+  - {fileID: 1520511417}
+  - {fileID: 309307219}
+  - {fileID: 1758670885}
+  - {fileID: 1628571293}
+  - {fileID: 1939305022}
+  - {fileID: 1705694525}
+  - {fileID: 1263493356}
+  - {fileID: 746047642}
+  - {fileID: 1084705825}
+  - {fileID: 1893675753}
+  - {fileID: 1652432191}
+  - {fileID: 2049897218}
+  - {fileID: 1716571920}
+  - {fileID: 904908004}
+  - {fileID: 809066113}
+  - {fileID: 722616710}
+  - {fileID: 648616107}
+  - {fileID: 1180798943}
+  - {fileID: 685702918}
+  - {fileID: 1288228687}
+  - {fileID: 1467936928}
+  - {fileID: 768173817}
+  - {fileID: 329378039}
+  - {fileID: 379404260}
+  - {fileID: 1108529981}
+  - {fileID: 1680103726}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1612049357}
+  m_AABB:
+    m_Center: {x: -10.016697, y: 76.51877, z: 16.32748}
+    m_Extent: {x: 14.786932, y: 7.870201, z: 10.106081}
+  m_DirtyAABB: 0
 --- !u!1 &469983977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +2483,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469983977}
+--- !u!1 &474038016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1573550340335660, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 474038017}
+  m_Layer: 0
+  m_Name: newVegas_Left_Sleeve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &474038017
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4474292740973558, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 474038016}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.247485, y: -0.649779, z: 0.58646}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 368705580}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &489535381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +2796,98 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 507448859}
+--- !u!1 &520671112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1690218563423320, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 520671113}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &520671113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4552157564136448, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520671112}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.694456, y: -8.608824, z: -11.066542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 14058668}
+  m_Father: {fileID: 1083668870}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &525337123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1400599145473158, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 525337124}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeC1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &525337124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4643467947299540, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 525337123}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000003, y: -8.688509, z: 0.000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 612456743}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &530424425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1763891609394346, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 530424426}
+  m_Layer: 0
+  m_Name: newVegas_Hair_Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &530424426
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4358515324979392, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530424425}
+  m_LocalRotation: {x: -0.00540138, y: -0.05811703, z: -0.0013191627, w: 0.9982943}
+  m_LocalPosition: {x: -0, y: 31.260447, z: 4.573764}
+  m_LocalScale: {x: 0.99999964, y: 0.9999998, z: 0.99999946}
+  m_Children:
+  - {fileID: 1388235957}
+  m_Father: {fileID: 1168260915}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &562957075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,6 +3128,37 @@ MonoBehaviour:
   inventorySpot: {fileID: 1022267500}
   mixTable: {fileID: 1883240684}
   mode: 0
+--- !u!1 &612456742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1821829386170150, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 612456743}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &612456743
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4920364243011822, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612456742}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15.944379, y: -8.608824, z: -6.393339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 525337124}
+  m_Father: {fileID: 368705580}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621899153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,6 +3272,166 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 637417401}
+--- !u!1 &641278681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1903070347576070, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 641278682}
+  - component: {fileID: 641278683}
+  m_Layer: 0
+  m_Name: newVegas_Elvis_BrowsAnimGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641278682
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4478706759429724, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641278681}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136931667}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &641278683
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137841524419813368, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 641278681}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100004, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300004, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_Bones:
+  - {fileID: 1612049357}
+  - {fileID: 1870405736}
+  - {fileID: 379350885}
+  - {fileID: 413234125}
+  - {fileID: 314406021}
+  - {fileID: 324254721}
+  - {fileID: 24356162}
+  - {fileID: 1061017126}
+  - {fileID: 1554640541}
+  - {fileID: 1277868115}
+  - {fileID: 1081263587}
+  - {fileID: 167869900}
+  - {fileID: 995996796}
+  - {fileID: 1847351584}
+  - {fileID: 1921186666}
+  - {fileID: 1633521759}
+  - {fileID: 1168260915}
+  - {fileID: 452551542}
+  - {fileID: 530424426}
+  - {fileID: 1388235957}
+  - {fileID: 698274644}
+  - {fileID: 1610306397}
+  - {fileID: 431659665}
+  - {fileID: 1083668870}
+  - {fileID: 368705580}
+  - {fileID: 958208531}
+  - {fileID: 1565444499}
+  - {fileID: 1895832868}
+  - {fileID: 336615902}
+  - {fileID: 2033736286}
+  - {fileID: 330433560}
+  - {fileID: 1949130917}
+  - {fileID: 1778517703}
+  - {fileID: 1803566081}
+  - {fileID: 174961317}
+  - {fileID: 1950258727}
+  - {fileID: 94792373}
+  - {fileID: 325982134}
+  - {fileID: 182622841}
+  - {fileID: 1017623699}
+  - {fileID: 1603785579}
+  - {fileID: 474038017}
+  - {fileID: 612456743}
+  - {fileID: 525337124}
+  - {fileID: 520671113}
+  - {fileID: 14058668}
+  - {fileID: 1951418489}
+  - {fileID: 829353255}
+  - {fileID: 351146890}
+  - {fileID: 2053908519}
+  - {fileID: 228774494}
+  - {fileID: 1978242324}
+  - {fileID: 1407883041}
+  - {fileID: 120930250}
+  - {fileID: 458195471}
+  - {fileID: 729211543}
+  - {fileID: 1520511417}
+  - {fileID: 309307219}
+  - {fileID: 1758670885}
+  - {fileID: 1628571293}
+  - {fileID: 1939305022}
+  - {fileID: 1705694525}
+  - {fileID: 1263493356}
+  - {fileID: 746047642}
+  - {fileID: 1084705825}
+  - {fileID: 1893675753}
+  - {fileID: 1652432191}
+  - {fileID: 2049897218}
+  - {fileID: 1716571920}
+  - {fileID: 904908004}
+  - {fileID: 809066113}
+  - {fileID: 722616710}
+  - {fileID: 648616107}
+  - {fileID: 1180798943}
+  - {fileID: 685702918}
+  - {fileID: 1288228687}
+  - {fileID: 1467936928}
+  - {fileID: 768173817}
+  - {fileID: 329378039}
+  - {fileID: 379404260}
+  - {fileID: 1108529981}
+  - {fileID: 1680103726}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1612049357}
+  m_AABB:
+    m_Center: {x: -9.380878, y: 82.9533, z: 12.189629}
+    m_Extent: {x: 16.735334, y: 9.039787, z: 12.496918}
+  m_DirtyAABB: 0
 --- !u!1 &644517511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,6 +3501,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1458403726}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &648616106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1838154860168752, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 648616107}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &648616107
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4729917351542492, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 648616106}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.694324, y: -8.608824, z: -11.066542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1180798943}
+  m_Father: {fileID: 2053908519}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &675322337
@@ -2243,6 +3646,67 @@ MonoBehaviour:
   talentPanel: {fileID: 1765512368}
   menuPanel: {fileID: 922933700}
   selected: 0
+--- !u!1 &685702917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1625748011332664, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 685702918}
+  m_Layer: 0
+  m_Name: newVegas_Left_Collar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &685702918
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4382266940239648, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685702917}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.625118, y: 8.655499, z: 8.828113}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1288228687}
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &698274643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1162567909477730, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 698274644}
+  m_Layer: 0
+  m_Name: newVegas_Hair_Front2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &698274644
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4857288233056450, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 698274643}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 2.284073, z: 11.993283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1388235957}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &699050216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,6 +3775,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699050216}
+--- !u!1 &722616709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1431738387580928, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 722616710}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeA1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &722616710
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4931966946855214, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 722616709}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -8.688509, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 809066113}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &729211542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1115905141976874, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 729211543}
+  m_Layer: 0
+  m_Name: newVegas_RightHandIndex1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729211543
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4780991148441600, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729211542}
+  m_LocalRotation: {x: -0.009346849, y: 0.021888386, z: -0.013346376, w: 0.99962765}
+  m_LocalPosition: {x: 18.76193, y: 0.178396, z: 4.531118}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 0.99999994}
+  m_Children:
+  - {fileID: 1520511417}
+  m_Father: {fileID: 1978242324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733498983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,6 +4024,36 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &746047641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1369436374522576, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 746047642}
+  m_Layer: 0
+  m_Name: newVegas_RightHandRing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746047642
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4990645518114792, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746047641}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.050348, y: 0.119144, z: -0.884829}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1263493356}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &751405949
 Prefab:
   m_ObjectHideFlags: 0
@@ -2591,6 +4146,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c11569f6d8bd4048b317189defdb4d2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &768173816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1969134068482698, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 768173817}
+  m_Layer: 0
+  m_Name: newVegas_Left_Peck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &768173817
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4317981149140716, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768173816}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.239555, y: -5.132621, z: 25.482586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792556971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +4296,67 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &809066112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1326243945951348, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 809066113}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &809066113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4337455014228472, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809066112}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.43145, y: -8.608824, z: -11.066542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 722616710}
+  m_Father: {fileID: 2053908519}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &829353254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1288444554052060, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 829353255}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeA1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &829353255
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4603621575124960, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829353254}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -8.688509, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1951418489}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851779561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,6 +4570,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 891415171}
+--- !u!1 &904908003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1932244268540478, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 904908004}
+  m_Layer: 0
+  m_Name: newVegas_Right_Sleeve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &904908004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4860861400023888, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 904908003}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.247487, y: -0.649978, z: 0.586505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 228774494}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912675283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,104 +5008,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 923476254}
---- !u!1001 &930521254
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 66.84988
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 10.012
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 70.46381
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.8234155
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.5674389
-      objectReference: {fileID: 0}
-    - target: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1301967683617256, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_Name
-      value: Maya
-      objectReference: {fileID: 0}
-    - target: {fileID: 4910199054397282, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114142355681555852, guid: cf792235d29a4451f81ed25fed931e73,
-        type: 2}
-      propertyPath: weaponPrefab
-      value: 
-      objectReference: {fileID: 114005247202774318, guid: 177bcb156660949f1a909c6e7b144d88,
-        type: 2}
-    - target: {fileID: 4585082604733566, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4504566562441822, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4347091240293338, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4382266940239648, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4317981149140716, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4024830197425672, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183319616147338, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4879853466430860, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4539708230889024, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 114142355681555852, guid: cf792235d29a4451f81ed25fed931e73,
-        type: 2}
-      propertyPath: guitar
-      value: 
-      objectReference: {fileID: 114982371404674570, guid: a20542587822c491b9516e0427d47029,
-        type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: cf792235d29a4451f81ed25fed931e73, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &941770263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,11 +5077,26 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941770263}
---- !u!4 &958208531 stripped
+--- !u!4 &958208531
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4646910677127028, guid: cf792235d29a4451f81ed25fed931e73,
     type: 2}
-  m_PrefabInternal: {fileID: 930521254}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58083210}
+  m_LocalRotation: {x: 0.118083134, y: 0.013922827, z: 0.021039894, w: 0.9926832}
+  m_LocalPosition: {x: -27.83289, y: 0, z: 0.954266}
+  m_LocalScale: {x: 1, y: 0.9999996, z: 1.0000001}
+  m_Children:
+  - {fileID: 2033736286}
+  - {fileID: 1778517703}
+  - {fileID: 182622841}
+  - {fileID: 1950258727}
+  - {fileID: 1565444499}
+  - {fileID: 39203866}
+  m_Father: {fileID: 368705580}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &994726137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,6 +5171,38 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994726137}
+--- !u!1 &995996795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1560379615955306, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 995996796}
+  m_Layer: 0
+  m_Name: newVegas_Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &995996796
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4212371840364378, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995996795}
+  m_LocalRotation: {x: 0.031202426, y: -0.0008990469, z: 0.021604123, w: 0.9992792}
+  m_LocalPosition: {x: -0, y: 10.200043, z: -0.299546}
+  m_LocalScale: {x: 1.0000001, y: 0.99999964, z: 0.9999998}
+  m_Children:
+  - {fileID: 1680103726}
+  - {fileID: 1847351584}
+  m_Father: {fileID: 1612049357}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1001917695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,6 +5326,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1001917695}
+--- !u!1 &1017623698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1917847075900274, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1017623699}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandPinky2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1017623699
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4669476225681250, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017623698}
+  m_LocalRotation: {x: -0.14397323, y: 0.09860944, z: 0.26921085, w: 0.9471396}
+  m_LocalPosition: {x: -2.262556, y: -0.308905, z: -1.109792}
+  m_LocalScale: {x: 0.9999995, y: 0.99999976, z: 1.0000001}
+  m_Children:
+  - {fileID: 1603785579}
+  m_Father: {fileID: 182622841}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022267500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,11 +5526,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031893937}
---- !u!4 &1061017126 stripped
+--- !u!4 &1061017126
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4469965421653962, guid: cf792235d29a4451f81ed25fed931e73,
     type: 2}
-  m_PrefabInternal: {fileID: 930521254}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170028350}
+  m_LocalRotation: {x: -0.15810522, y: 0.062443268, z: 0.050316606, w: 0.9841605}
+  m_LocalPosition: {x: 18.735231, y: -5.666687, z: -4.541196}
+  m_LocalScale: {x: 0.9999998, y: 1, z: 0.99999964}
+  m_Children:
+  - {fileID: 1841221321}
+  - {fileID: 1554640541}
+  m_Father: {fileID: 1870405736}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1075247865
 GameObject:
   m_ObjectHideFlags: 0
@@ -3961,6 +5628,100 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1075247865}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1081263586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1796409243390274, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1081263587}
+  m_Layer: 0
+  m_Name: newVegas_RightToeBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081263587
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068855593354216, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1081263586}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.94298, y: -26.721954, z: 15.023476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1277868115}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1083668869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1720704201433408, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1083668870}
+  m_Layer: 0
+  m_Name: newVegas_LeftArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1083668870
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4642138188588078, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083668869}
+  m_LocalRotation: {x: 0.03962677, y: 0.17517321, z: 0.3425543, w: 0.9221717}
+  m_LocalPosition: {x: -25.438639, y: -2.830644, z: -13.032502}
+  m_LocalScale: {x: 1.0000002, y: 0.9999998, z: 0.9999998}
+  m_Children:
+  - {fileID: 1951418489}
+  - {fileID: 520671113}
+  - {fileID: 368705580}
+  m_Father: {fileID: 431659665}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1084705824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1084021879067932, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1084705825}
+  m_Layer: 0
+  m_Name: newVegas_RightHandPinky1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084705825
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4595903423548824, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084705824}
+  m_LocalRotation: {x: 0.00773204, y: -0.17832248, z: 0.006736119, w: 0.98391867}
+  m_LocalPosition: {x: 15.713015, y: -1.058274, z: -8.049928}
+  m_LocalScale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
+  m_Children:
+  - {fileID: 1893675753}
+  m_Father: {fileID: 1978242324}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104086678
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,6 +5791,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1104086678}
+--- !u!1 &1108529980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1856918990288336, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1108529981}
+  m_Layer: 0
+  m_Name: newVegas_Right_Collar1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108529981
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4008546896392032, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1108529980}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.783405, y: 10.539992, z: -1.259502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 379404260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1131275190
 Prefab:
   m_ObjectHideFlags: 0
@@ -4199,6 +5990,39 @@ Transform:
   m_PrefabParentObject: {fileID: 4904550902132680, guid: 7c11569f6d8bd4048b317189defdb4d2,
     type: 2}
   m_PrefabInternal: {fileID: 1891936504}
+--- !u!1 &1168260914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1558189315083208, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1168260915}
+  m_Layer: 0
+  m_Name: newVegas_Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1168260915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4740788307728524, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168260914}
+  m_LocalRotation: {x: -0.00540138, y: -0.05811703, z: -0.0013191627, w: 0.9982943}
+  m_LocalPosition: {x: -0, y: 14.068774, z: -1.35186}
+  m_LocalScale: {x: 0.99999964, y: 0.9999998, z: 0.99999946}
+  m_Children:
+  - {fileID: 452551542}
+  - {fileID: 530424426}
+  - {fileID: 1610306397}
+  m_Father: {fileID: 1633521759}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1175967827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,6 +6097,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175967827}
+--- !u!1 &1180798942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1340490042440784, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1180798943}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeB1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180798943
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4149169979978408, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180798942}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000009, y: -8.688509, z: 0.000001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 648616107}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1222023970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4618,6 +6472,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1251034130}
+--- !u!1 &1263493355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1128591962241362, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1263493356}
+  m_Layer: 0
+  m_Name: newVegas_RightHandRing2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263493356
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4721452986828220, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263493355}
+  m_LocalRotation: {x: -0.15539971, y: -0.10633916, z: -0.58240706, w: 0.7907876}
+  m_LocalPosition: {x: 2.582435, y: -0.710152, z: -0.544993}
+  m_LocalScale: {x: 0.99999964, y: 1.0000004, z: 1.0000002}
+  m_Children:
+  - {fileID: 746047642}
+  m_Father: {fileID: 1705694525}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1264925317 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4904550902132680, guid: 7c11569f6d8bd4048b317189defdb4d2,
@@ -4725,6 +6610,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276600731}
+--- !u!1 &1277868114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1991671077592934, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1277868115}
+  m_Layer: 0
+  m_Name: newVegas_RightFoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1277868115
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4374973766847914, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1277868114}
+  m_LocalRotation: {x: 0.06558492, y: 0.01472277, z: -0.15663932, w: 0.9853659}
+  m_LocalPosition: {x: 2.205306, y: -31.861923, z: -4.33631}
+  m_LocalScale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+  m_Children:
+  - {fileID: 1081263587}
+  m_Father: {fileID: 1554640541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1288228686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1082525103179074, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1288228687}
+  m_Layer: 0
+  m_Name: newVegas_Left_Collar1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288228687
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4347890656174684, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288228686}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.783402, y: 10.540357, z: -1.259482}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 685702918}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1292796756
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,6 +6861,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301203494}
+--- !u!1 &1313256000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1660531995725120, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1921186666}
+  m_Layer: 0
+  m_Name: newVegas_Spine2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1318148166
 GameObject:
   m_ObjectHideFlags: 0
@@ -5120,6 +7082,7 @@ MonoBehaviour:
   guitarText: {fileID: 285142223}
   weaponIcon: {fileID: 1420450784}
   weaponText: {fileID: 1950386155}
+  inventory: {fileID: 2136931661}
 --- !u!1 &1332399296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5384,6 +7347,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1376322727}
+--- !u!1 &1388235956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1769796533568872, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1388235957}
+  m_Layer: 0
+  m_Name: newVegas_Hair_Front1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388235957
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4021604114519060, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1388235956}
+  m_LocalRotation: {x: -0.005400374, y: -0.05811653, z: -0.0013191014, w: 0.99829435}
+  m_LocalPosition: {x: -0, y: 2.284067, z: 11.993284}
+  m_LocalScale: {x: 0.9999995, y: 0.9999998, z: 1.0000005}
+  m_Children:
+  - {fileID: 698274644}
+  m_Father: {fileID: 530424426}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405036830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5456,6 +7450,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1405036830}
+--- !u!1 &1407883040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1420994224130376, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1407883041}
+  m_Layer: 0
+  m_Name: newVegas_RightHandThumb1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1407883041
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4167995228696090, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1407883040}
+  m_LocalRotation: {x: 0.013273957, y: -0.0776283, z: -0.07970197, w: 0.9937028}
+  m_LocalPosition: {x: 4.767457, y: -2.676677, z: 6.397403}
+  m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 0.99999976}
+  m_Children:
+  - {fileID: 120930250}
+  m_Father: {fileID: 1978242324}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408087455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,6 +7745,36 @@ Transform:
   m_Father: {fileID: 1921186666}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -182.036, y: 118.649994, z: -9.632996}
+--- !u!1 &1467936927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1368959253761974, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1467936928}
+  m_Layer: 0
+  m_Name: newVegas_Collar_Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467936928
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4024830197425672, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467936927}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 15.630701, z: -20.132616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1498103115
 GameObject:
   m_ObjectHideFlags: 0
@@ -5874,6 +7929,22 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1515566540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1897642023663488, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1978242324}
+  m_Layer: 0
+  m_Name: newVegas_RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1517507571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,6 +8065,37 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1520511416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1858263186551822, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1520511417}
+  m_Layer: 0
+  m_Name: newVegas_RightHandIndex2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1520511417
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4827675849359860, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520511416}
+  m_LocalRotation: {x: 0.016741656, y: 0.03935047, z: -0.19589755, w: 0.9796915}
+  m_LocalPosition: {x: 3.171221, y: -0.35048, z: 0.09767}
+  m_LocalScale: {x: 1.0000007, y: 1.0000002, z: 1.0000005}
+  m_Children:
+  - {fileID: 309307219}
+  m_Father: {fileID: 729211543}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522526392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6176,11 +8278,229 @@ RectTransform:
   m_AnchoredPosition: {x: 2.4975, y: 0}
   m_SizeDelta: {x: -4.995, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1554640540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1858312691591278, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1554640541}
+  m_Layer: 0
+  m_Name: newVegas_RightLeg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554640541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4585082604733566, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554640540}
+  m_LocalRotation: {x: 0.0939112, y: -0.079550065, z: -0.0035115778, w: 0.99239117}
+  m_LocalPosition: {x: 2.167511, y: -31.864508, z: 0.493069}
+  m_LocalScale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+  m_Children:
+  - {fileID: 167869900}
+  - {fileID: 1277868115}
+  m_Father: {fileID: 1061017126}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1565444498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1092985436925990, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1565444499}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandThumb1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1565444499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4404671772336130, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1565444498}
+  m_LocalRotation: {x: 0.056492154, y: 0.061182413, z: 0.18520592, w: 0.979165}
+  m_LocalPosition: {x: -4.767457, y: -2.676677, z: 6.397403}
+  m_LocalScale: {x: 1, y: 1.0000004, z: 1.0000004}
+  m_Children:
+  - {fileID: 1895832868}
+  m_Father: {fileID: 958208531}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1574992626 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4904550902132680, guid: 7c11569f6d8bd4048b317189defdb4d2,
     type: 2}
   m_PrefabInternal: {fileID: 751405949}
+--- !u!1 &1603785578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1054132180277370, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1603785579}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandPinky3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603785579
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4380515143526280, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603785578}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.240665, y: -0.150866, z: -1.296447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1017623699}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1610306396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1067738769282510, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1610306397}
+  m_Layer: 0
+  m_Name: newVegas_Jowel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1610306397
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4506252138995766, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610306396}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -7.458241, z: 6.864121}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1168260915}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1612049356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1736521839083916, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1612049357}
+  m_Layer: 0
+  m_Name: newVegas_Hips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1612049357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4477718876451646, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612049356}
+  m_LocalRotation: {x: 0.10401042, y: 0.96948165, z: 0.029519321, w: 0.22003596}
+  m_LocalPosition: {x: 1.147299, y: 86.263, z: -4.530758}
+  m_LocalScale: {x: 1, y: 1.0000001, z: 0.9999998}
+  m_Children:
+  - {fileID: 1941555557}
+  - {fileID: 1870405736}
+  - {fileID: 995996796}
+  m_Father: {fileID: 2136931667}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628571292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1481235852744776, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1628571293}
+  m_Layer: 0
+  m_Name: newVegas_RightHandMiddle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1628571293
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4322369605711936, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1628571292}
+  m_LocalRotation: {x: -0.016766962, y: -0.048253868, z: -0.25548947, w: 0.9654613}
+  m_LocalPosition: {x: 3.30896, y: -0.304451, z: -0.112251}
+  m_LocalScale: {x: 0.9999995, y: 1.0000002, z: 1}
+  m_Children:
+  - {fileID: 1939305022}
+  m_Father: {fileID: 1758670885}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633521758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1007823624857764, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1633521759}
+  m_Layer: 0
+  m_Name: newVegas_Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633521759
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4879853466430860, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633521758}
+  m_LocalRotation: {x: -0.005400877, y: -0.05811703, z: -0.0013191333, w: 0.9982943}
+  m_LocalPosition: {x: -0, y: 9.624111, z: -2.890091}
+  m_LocalScale: {x: 0.99999964, y: 0.9999998, z: 1.0000005}
+  m_Children:
+  - {fileID: 1168260915}
+  m_Father: {fileID: 1921186666}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1638092837
 GameObject:
   m_ObjectHideFlags: 0
@@ -6301,6 +8621,36 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1652432190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1717899273741648, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1652432191}
+  m_Layer: 0
+  m_Name: newVegas_RightHandPinky3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1652432191
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4176751289559550, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652432190}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.240665, y: -0.150866, z: -1.296447}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1893675753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1652917454
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,6 +8811,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1657663203}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1680103725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1809572233578458, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1680103726}
+  m_Layer: 0
+  m_Name: newVegas_Belly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680103726
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4753212803719524, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680103725}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -6.540393, z: 9.014253}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 995996796}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684109299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6615,6 +8995,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1704371805}
+--- !u!1 &1705694524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1787278963503304, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1705694525}
+  m_Layer: 0
+  m_Name: newVegas_RightHandRing1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1705694525
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4789893438210430, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1705694524}
+  m_LocalRotation: {x: 0.023820037, y: -0.0828189, z: 0.14113435, w: 0.98623264}
+  m_LocalPosition: {x: 17.563906, y: -0.015575, z: -4.860667}
+  m_LocalScale: {x: 0.9999997, y: 0.9999996, z: 0.99999976}
+  m_Children:
+  - {fileID: 1263493356}
+  m_Father: {fileID: 1978242324}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1708465194
 GameObject:
   m_ObjectHideFlags: 0
@@ -6700,6 +9111,36 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1716571919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1970020885878482, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1716571920}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeC1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716571920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4616831255727488, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716571919}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: -8.688509, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2049897218}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1735551023
 GameObject:
   m_ObjectHideFlags: 0
@@ -7063,6 +9504,37 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &1758670884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1198140695687500, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1758670885}
+  m_Layer: 0
+  m_Name: newVegas_RightHandMiddle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1758670885
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4980506980315152, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758670884}
+  m_LocalRotation: {x: -0.010808558, y: 0.0077662794, z: -0.006193723, w: 0.99989223}
+  m_LocalPosition: {x: 18.461424, y: 0.243427, z: -0.695649}
+  m_LocalScale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+  m_Children:
+  - {fileID: 1628571293}
+  m_Father: {fileID: 1978242324}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765512368
 GameObject:
   m_ObjectHideFlags: 0
@@ -7133,6 +9605,197 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1765512368}
+--- !u!1 &1765668441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1877336535732996, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1765668442}
+  - component: {fileID: 1765668443}
+  m_Layer: 0
+  m_Name: newVegas_Elvis_BodyGeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1765668442
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4792823725521178, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765668441}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2136931667}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1765668443
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137014771978229070, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1765668441}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 4300000, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_Bones:
+  - {fileID: 1612049357}
+  - {fileID: 1870405736}
+  - {fileID: 379350885}
+  - {fileID: 413234125}
+  - {fileID: 314406021}
+  - {fileID: 324254721}
+  - {fileID: 24356162}
+  - {fileID: 1061017126}
+  - {fileID: 1554640541}
+  - {fileID: 1277868115}
+  - {fileID: 1081263587}
+  - {fileID: 167869900}
+  - {fileID: 995996796}
+  - {fileID: 1847351584}
+  - {fileID: 1921186666}
+  - {fileID: 1633521759}
+  - {fileID: 1168260915}
+  - {fileID: 452551542}
+  - {fileID: 530424426}
+  - {fileID: 1388235957}
+  - {fileID: 698274644}
+  - {fileID: 1610306397}
+  - {fileID: 431659665}
+  - {fileID: 1083668870}
+  - {fileID: 368705580}
+  - {fileID: 958208531}
+  - {fileID: 1565444499}
+  - {fileID: 1895832868}
+  - {fileID: 336615902}
+  - {fileID: 2033736286}
+  - {fileID: 330433560}
+  - {fileID: 1949130917}
+  - {fileID: 1778517703}
+  - {fileID: 1803566081}
+  - {fileID: 174961317}
+  - {fileID: 1950258727}
+  - {fileID: 94792373}
+  - {fileID: 325982134}
+  - {fileID: 182622841}
+  - {fileID: 1017623699}
+  - {fileID: 1603785579}
+  - {fileID: 474038017}
+  - {fileID: 612456743}
+  - {fileID: 525337124}
+  - {fileID: 520671113}
+  - {fileID: 14058668}
+  - {fileID: 1951418489}
+  - {fileID: 829353255}
+  - {fileID: 351146890}
+  - {fileID: 2053908519}
+  - {fileID: 228774494}
+  - {fileID: 1978242324}
+  - {fileID: 1407883041}
+  - {fileID: 120930250}
+  - {fileID: 458195471}
+  - {fileID: 729211543}
+  - {fileID: 1520511417}
+  - {fileID: 309307219}
+  - {fileID: 1758670885}
+  - {fileID: 1628571293}
+  - {fileID: 1939305022}
+  - {fileID: 1705694525}
+  - {fileID: 1263493356}
+  - {fileID: 746047642}
+  - {fileID: 1084705825}
+  - {fileID: 1893675753}
+  - {fileID: 1652432191}
+  - {fileID: 2049897218}
+  - {fileID: 1716571920}
+  - {fileID: 904908004}
+  - {fileID: 809066113}
+  - {fileID: 722616710}
+  - {fileID: 648616107}
+  - {fileID: 1180798943}
+  - {fileID: 685702918}
+  - {fileID: 1288228687}
+  - {fileID: 1467936928}
+  - {fileID: 768173817}
+  - {fileID: 329378039}
+  - {fileID: 379404260}
+  - {fileID: 1108529981}
+  - {fileID: 1680103726}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1612049357}
+  m_AABB:
+    m_Center: {x: -6.721985, y: 5.4299583, z: -0.3072281}
+    m_Extent: {x: 76.69315, y: 101.88306, z: 60.067333}
+  m_DirtyAABB: 0
+--- !u!1 &1778517702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1630532865015392, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1778517703}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandMiddle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1778517703
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4166612851484716, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778517702}
+  m_LocalRotation: {x: -0.0021884711, y: -0.0041917795, z: 0.01895295, w: 0.9998092}
+  m_LocalPosition: {x: -18.461424, y: 0.243427, z: -0.695648}
+  m_LocalScale: {x: 0.9999996, y: 1, z: 0.9999997}
+  m_Children:
+  - {fileID: 1803566081}
+  m_Father: {fileID: 958208531}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780937069
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,6 +9926,37 @@ Transform:
   m_Father: {fileID: 582810563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 12.094001, y: 0, z: 0}
+--- !u!1 &1803566080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1451442753631406, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1803566081}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandMiddle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803566081
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4539049782641810, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803566080}
+  m_LocalRotation: {x: -0.014850526, y: 0.046440948, z: 0.22467715, w: 0.97321266}
+  m_LocalPosition: {x: -3.30896, y: -0.304451, z: -0.112251}
+  m_LocalScale: {x: 1.0000001, y: 0.9999999, z: 0.99999964}
+  m_Children:
+  - {fileID: 174961317}
+  m_Father: {fileID: 1778517703}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804837615
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,6 +10173,69 @@ Transform:
   m_Father: {fileID: 1061017126}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -142.653, y: 0, z: -0.000015258789}
+--- !u!1 &1847351583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1135541009227798, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1847351584}
+  m_Layer: 0
+  m_Name: newVegas_Spine1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1847351584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4760355954168092, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1847351583}
+  m_LocalRotation: {x: 0.062348653, y: -0.0024656518, z: 0.025854269, w: 0.9977165}
+  m_LocalPosition: {x: -0, y: 11.900047, z: -1.516604}
+  m_LocalScale: {x: 1, y: 0.9999996, z: 0.9999999}
+  m_Children:
+  - {fileID: 1921186666}
+  m_Father: {fileID: 995996796}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1870405735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1869289433443898, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1870405736}
+  m_Layer: 0
+  m_Name: newVegas_Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870405736
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4031902711435582, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870405735}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 379350885}
+  - {fileID: 1061017126}
+  m_Father: {fileID: 1612049357}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1883240684 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1081806215697234, guid: 0546b4753eb01430298a47450e08fc95,
@@ -7535,6 +10292,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c11569f6d8bd4048b317189defdb4d2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1893675752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1772357828374386, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1893675753}
+  m_Layer: 0
+  m_Name: newVegas_RightHandPinky2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893675753
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4155264441553772, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1893675752}
+  m_LocalRotation: {x: -0.20985109, y: -0.13140282, z: -0.40114385, w: 0.88191813}
+  m_LocalPosition: {x: 2.262556, y: -0.308905, z: -1.109792}
+  m_LocalScale: {x: 1.0000001, y: 0.9999998, z: 1.0000004}
+  m_Children:
+  - {fileID: 1652432191}
+  m_Father: {fileID: 1084705825}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1895832867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1742090729989432, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1895832868}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895832868
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4980493843075392, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895832867}
+  m_LocalRotation: {x: 0.004304111, y: -0.0029182462, z: 0.015601174, w: 0.9998648}
+  m_LocalPosition: {x: -6.625811, y: -0.223518, z: 2.471421}
+  m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 1.0000001}
+  m_Children:
+  - {fileID: 336615902}
+  m_Father: {fileID: 1565444499}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1917207685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7619,11 +10438,151 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1917207685}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1921186666 stripped
+--- !u!4 &1921186666
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4399590794687196, guid: cf792235d29a4451f81ed25fed931e73,
     type: 2}
-  m_PrefabInternal: {fileID: 930521254}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313256000}
+  m_LocalRotation: {x: 0.06234865, y: -0.0024656828, z: 0.02585377, w: 0.9977165}
+  m_LocalPosition: {x: -0, y: 13.600044, z: -2.842519}
+  m_LocalScale: {x: 1, y: 0.9999995, z: 0.9999999}
+  m_Children:
+  - {fileID: 1462632727}
+  - {fileID: 1522526393}
+  - {fileID: 685702918}
+  - {fileID: 1467936928}
+  - {fileID: 768173817}
+  - {fileID: 351146890}
+  - {fileID: 379404260}
+  - {fileID: 329378039}
+  - {fileID: 1633521759}
+  - {fileID: 431659665}
+  m_Father: {fileID: 1847351584}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1939305021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1780892964797672, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1939305022}
+  m_Layer: 0
+  m_Name: newVegas_RightHandMiddle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1939305022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4910199054397282, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1939305021}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.584319, y: 0.057678, z: -0.330443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1628571293}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1941555556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1059617264040710, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1941555557}
+  m_Layer: 0
+  m_Name: newVegas_ElvisFacialAnim_Joint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1941555557
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4060739824457482, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1941555556}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1, y: -95.330055, z: -8.825774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1612049357}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1949130916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1295308266596958, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1949130917}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandIndex3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1949130917
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4777358409600034, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1949130916}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.807622, y: -0.034589, z: 0.457391}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 330433560}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1950258726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1561952896558690, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1950258727}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandRing1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1950258727
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4338939528910922, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950258726}
+  m_LocalRotation: {x: -0.010855512, y: 0.027401716, z: -0.008414991, w: 0.99953014}
+  m_LocalPosition: {x: -17.563906, y: -0.015575, z: -4.860667}
+  m_LocalScale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+  m_Children:
+  - {fileID: 94792373}
+  m_Father: {fileID: 958208531}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950386153
 GameObject:
   m_ObjectHideFlags: 0
@@ -7704,6 +10663,37 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950386153}
+--- !u!1 &1951418488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1199451960153996, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1951418489}
+  m_Layer: 0
+  m_Name: newVegas_Left_CapeA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1951418489
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4714450241314786, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1951418488}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.43145, y: -8.608824, z: -11.066542}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 829353255}
+  m_Father: {fileID: 1083668870}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1969966103
 GameObject:
   m_ObjectHideFlags: 0
@@ -7745,11 +10735,26 @@ Transform:
   m_Father: {fileID: 1458403726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1978242324 stripped
+--- !u!4 &1978242324
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4498983879541706, guid: cf792235d29a4451f81ed25fed931e73,
     type: 2}
-  m_PrefabInternal: {fileID: 930521254}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515566540}
+  m_LocalRotation: {x: 0.17767033, y: 0.1415677, z: -0.10188367, w: 0.96851}
+  m_LocalPosition: {x: 27.83289, y: 0, z: 0.954266}
+  m_LocalScale: {x: 1.0000005, y: 0.9999999, z: 0.99999946}
+  m_Children:
+  - {fileID: 729211543}
+  - {fileID: 1758670885}
+  - {fileID: 1084705825}
+  - {fileID: 1705694525}
+  - {fileID: 1407883041}
+  - {fileID: 1272626827}
+  m_Father: {fileID: 228774494}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1999586698
 Prefab:
   m_ObjectHideFlags: 0
@@ -7896,6 +10901,101 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2030593105}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2033736285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1386974892357104, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2033736286}
+  m_Layer: 0
+  m_Name: newVegas_LeftHandIndex1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2033736286
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4569393761856746, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033736285}
+  m_LocalRotation: {x: 0.18585603, y: 0.058177426, z: -0.035002187, w: 0.9802285}
+  m_LocalPosition: {x: -18.76193, y: 0.178396, z: 4.531118}
+  m_LocalScale: {x: 0.9999995, y: 1.0000002, z: 1.0000004}
+  m_Children:
+  - {fileID: 330433560}
+  m_Father: {fileID: 958208531}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2049897217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1746063661752560, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2049897218}
+  m_Layer: 0
+  m_Name: newVegas_Right_CapeC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049897218
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4278027557854190, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049897217}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.944379, y: -8.608824, z: -6.393339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1716571920}
+  m_Father: {fileID: 228774494}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2053908518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1294484986121112, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2053908519}
+  m_Layer: 0
+  m_Name: newVegas_RightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053908519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4648743001715126, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053908518}
+  m_LocalRotation: {x: 0.045699682, y: 0.17950134, z: -0.45778897, w: 0.86955166}
+  m_LocalPosition: {x: 25.438639, y: -2.830643, z: -13.032501}
+  m_LocalScale: {x: 1, y: 0.99999994, z: 1.0000005}
+  m_Children:
+  - {fileID: 809066113}
+  - {fileID: 648616107}
+  - {fileID: 228774494}
+  m_Father: {fileID: 351146890}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056457986
 GameObject:
   m_ObjectHideFlags: 0
@@ -8176,11 +11276,28 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2103550352}
---- !u!1 &2136931660 stripped
+--- !u!1 &2136931660
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1301967683617256, guid: cf792235d29a4451f81ed25fed931e73,
     type: 2}
-  m_PrefabInternal: {fileID: 930521254}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2136931667}
+  - component: {fileID: 2136931665}
+  - component: {fileID: 2136931664}
+  - component: {fileID: 2136931661}
+  - component: {fileID: 2136931663}
+  - component: {fileID: 2136931662}
+  - component: {fileID: 2136931666}
+  m_Layer: 0
+  m_Name: Maya
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &2136931661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8209,6 +11326,91 @@ MonoBehaviour:
   - {fileID: 114005247202774318, guid: 177bcb156660949f1a909c6e7b144d88, type: 2}
   currentGuitar: {fileID: 0}
   currentWeapon: {fileID: 0}
+  ui: {fileID: 1327940405}
+--- !u!114 &2136931662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114642903894813020, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136931660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f86743d77114bdaa4a3f3a31aab98a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strengh: 15
+  agility: 15
+  constitution: 15
+  armor: 15
+  hp: 0
+  hpMax: 0
+  level: 1
+  xp: 0
+  money: 0
+  levelUpXp: 100
+  talentPoints: 0
+  caracPoints: 0
+--- !u!114 &2136931663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114142355681555852, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136931660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5dd18f419a947d1ab1faec682c1ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 0}
+  weapon: {fileID: 0}
+  weaponUnused: {fileID: 0}
+  guitar: {fileID: 114982371404674570, guid: a20542587822c491b9516e0427d47029, type: 2}
+  guitarUnused: {fileID: 0}
+  weaponUsed: {fileID: 0}
+  targetEnemy: {fileID: 0}
+  inMenu: 0
+--- !u!195 &2136931664
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 195910012631417350, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136931660}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 75
+  m_Speed: 10
+  m_Acceleration: 10000
+  avoidancePriority: 50
+  m_AngularSpeed: 10000
+  m_StoppingDistance: 1.5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 300
+  m_BaseOffset: 1.75
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &2136931665
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 95704340876004516, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136931660}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0b760dfcd48274af09482852bc9516f1, type: 3}
+  m_Controller: {fileID: 9100000, guid: 07092e28d3b9b4457a55bebbad8d111a, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &2136931666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8230,6 +11432,25 @@ MonoBehaviour:
   - 0
   - 0
   - 0
+--- !u!4 &2136931667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4247756041707296, guid: cf792235d29a4451f81ed25fed931e73,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136931660}
+  m_LocalRotation: {x: -0, y: -0.8234155, z: -0, w: 0.5674389}
+  m_LocalPosition: {x: 66.84988, y: 10.012, z: 70.46381}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children:
+  - {fileID: 1765668442}
+  - {fileID: 641278682}
+  - {fileID: 460732987}
+  - {fileID: 352804838}
+  - {fileID: 1612049357}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -110.856, z: 0}
 --- !u!1 &2136931716
 GameObject:
   m_ObjectHideFlags: 0

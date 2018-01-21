@@ -25,6 +25,7 @@ public class Weapon : MonoBehaviour {
 
 	public bool onGround;
 	public ParticleSystem shine;
+	public ParticleSystem shineInstance = null;
 	public Texture icon;
 	public Quality quality = Quality.NORMAL;
 
@@ -85,7 +86,14 @@ public class Weapon : MonoBehaviour {
 	}
 
 	public void setOnGround() {
-		GameObject.Instantiate(shine, transform.position, Quaternion.identity);
+		shineInstance = GameObject.Instantiate(shine, transform.position, Quaternion.identity);
 		coll.enabled = true;
+	}
+
+	public void setOnInventory() {
+		coll.enabled = false;
+		Destroy(shineInstance.gameObject);
+		shineInstance = null;
+		transform.position = new Vector3(1000, 1000, 1000);
 	}
 }

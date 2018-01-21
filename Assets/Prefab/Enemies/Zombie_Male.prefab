@@ -2531,10 +2531,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strengh: 5
   agility: 5
-  constitution: 50
+  constitution: 5
   armor: 5
   hp: 0
-  hpMax: 250
+  hpMax: 25
   level: 1
   xp: 30
   money: 10

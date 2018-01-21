@@ -46,6 +46,8 @@ public class Maya : MonoBehaviour {
 		nav = gameObject.GetComponent<NavMeshAgent>();
 		stats = gameObject.GetComponent<Stats>();
 		inventory = gameObject.GetComponent<Inventory>();
+		// inventory.initCurrentGuitar();
+		// inventory.initCurrentWeapon();
 		map = GameObject.Find("Terrain");
 
 		// weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
@@ -123,8 +125,11 @@ public class Maya : MonoBehaviour {
 					targetEnemy = hit.collider.gameObject;
 					isAttacking = true;
 					return;
-				} else if (tag == "SnowBoard" || tag == "LaserSaber" || tag == "Guitar") {
-					Debug.Log("CLICK ON WEAPON");
+				} else if (tag == "Snowboard" || tag == "LaserSaber" || tag == "Guitar") {
+					if(Vector3.Distance(hit.collider.gameObject.transform.position, transform.position) < 2) {
+						inventory.add(Instantiate(hit.collider.gameObject.GetComponent<Weapon>(), new Vector3(1000, 1000, 1000), Quaternion.identity));
+						Destroy(hit.collider.gameObject);
+					}
 				}
 
 			}
@@ -143,6 +148,16 @@ public class Maya : MonoBehaviour {
 	}
 
 	void manageAttack() {
+
+		if (weapon.tag == "Snowboard")
+			weapon.transform.localRotation = Quaternion.Euler(-502, -63, -189);
+		else if (weapon.tag == "LaserSaber") {
+			weapon.transform.localPosition = new Vector3(-226, 292, -136);
+			weapon.transform.localRotation = Quaternion.Euler(13.5f, -46.8f, -86);
+		}
+		else if (weapon.tag == "Guitar")
+			weapon.transform.localRotation = Quaternion.Euler(-15, 116, -127);
+
 		if (!isAttacking) {
 			manageWeaponPlace(false);
 			return;
@@ -200,7 +215,7 @@ public class Maya : MonoBehaviour {
 	void applyDamage() {
 		Stats enemy = targetEnemy.GetComponent<Stats>();
 		int damage = stats.getDamage(enemy);
-		Debug.Log(damage);
+		// Debug.Log(damage);
 		enemy.hp -= damage + weaponUsed.getDamage();
 		if (enemy.hp <= 0) {
 			StopCoroutine(attack());
@@ -256,23 +271,27 @@ public class Maya : MonoBehaviour {
 	public void refreshInventory() {
 
 		if (weapon)
-			Destroy(weapon);
+			Destroy(weapon.gameObject);
 		if (weaponUnused)
-			Destroy(weaponUnused);
+			Destroy(weaponUnused.gameObject);
 		if (guitar)
-			Destroy(guitar);
+			Destroy(guitar.gameObject);
 		if(guitarUnused)
-			Destroy(guitarUnused);
+			Destroy(guitarUnused.gameObject);
 
-		weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
-		weaponUnused = GameObject.Instantiate(inventory.getCurrentWeapon());
-		weapon.gameObject.transform.parent = rightHandPlace.transform;
+		weapon = inventory.getCurrentWeapon();
+		weaponUnused = inventory.getCurrentWeapon();
+		weapon.gameObject.transform.SetParent(rightHandPlace.transform);
+		weapon.gameObject.transform.localPosition = Vector3.zero;
+		// weapon.gameObject.transform.parent = rightHandPlace.transform;
 
-		guitar = GameObject.Instantiate(inventory.getCurrentGuitar());
+		guitar = inventory.getCurrentGuitar();
 		guitar.transform.position = rightHandPlace.transform.position;
 		guitar.transform.rotation = rightHandPlace.transform.rotation;
-		guitar.gameObject.transform.parent = rightHandPlace.transform;
-		guitarUnused = GameObject.Instantiate(inventory.getCurrentGuitar());
+		guitar.gameObject.transform.SetParent(rightHandPlace.transform);
+		guitar.gameObject.transform.localPosition = Vector3.zero;
+
+		guitarUnused = inventory.getCurrentGuitar();
 		guitarUnused.transform.position = guitarBackPlace.transform.position;
 		guitarUnused.transform.rotation = guitarBackPlace.transform.rotation;
 		guitarUnused.gameObject.transform.parent = guitarBackPlace.transform;
