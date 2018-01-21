@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 1942983660562694, guid: 0173d637d66b54e7688af9fdb3bdfc25, type: 2}
-  - {fileID: 1918600747231640, guid: ee5c269b789314749a533a396b57c897, type: 2}
+  - {fileID: 1012926122789626, guid: 1a1b9e8048cea4d0786c1ab9e54bd1bc, type: 2}
+  - {fileID: 1948484936822986, guid: ca9c6db2d47c14778abc61966e3d01df, type: 2}
   size: 2
   frequency: 5

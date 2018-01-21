@@ -14,6 +14,7 @@ public class Zombie : MonoBehaviour {
 	public int health;
 
 	public float aggroRange = 2;
+	public float attackRange;
 	private bool attack;
 	private bool move;
 	private float distToMaya;
@@ -64,7 +65,7 @@ public class Zombie : MonoBehaviour {
 	void manageAttack() {
 		if (!attack)
 			return;
-		if (distToMaya < 2) {
+		if (distToMaya < attackRange) {
 			transform.LookAt(maya.transform.position);
 			move = false;
 		} else

@@ -2514,6 +2514,7 @@ MonoBehaviour:
   stats: {fileID: 0}
   health: 3
   aggroRange: 10
+  attackRange: 2
   spawner: {fileID: 0}
   dropPossibilities:
   - {fileID: 114982371404674570, guid: a20542587822c491b9516e0427d47029, type: 2}

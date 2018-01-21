@@ -2512,6 +2512,7 @@ MonoBehaviour:
   stats: {fileID: 0}
   health: 3
   aggroRange: 10
+  attackRange: 2
   spawner: {fileID: 0}
   dropPossibilities:
   - {fileID: 114982371404674570, guid: a20542587822c491b9516e0427d47029, type: 2}
@@ -2535,12 +2536,15 @@ MonoBehaviour:
   armor: 5
   hp: 0
   hpMax: 25
+  minDamage: 0
+  maxDamage: 0
   level: 1
   xp: 30
   money: 10
   levelUpXp: 0
   talentPoints: 0
   caracPoints: 0
+  levelUpPS: {fileID: 0}
 --- !u!137 &137237828946482248
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
