@@ -47,6 +47,7 @@ public class Stats : MonoBehaviour {
 		Destroy(clone, 2);
 		RefreshStats();
 		hp = hpMax;
+		level++;
 	}
 	
 	public int getDamage(Stats target) {
@@ -73,7 +74,6 @@ public class Stats : MonoBehaviour {
 
 	public void RefreshStats() {
 		hpMax = 5 * constitution;
-		hp += 5;
 		minDamage = strengh / 2;
 		maxDamage = minDamage + 4;
 		armor = strengh + constitution;
