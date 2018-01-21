@@ -48,7 +48,7 @@ public class Maya : MonoBehaviour {
 		inventory = gameObject.GetComponent<Inventory>();
 		// inventory.initCurrentGuitar();
 		// inventory.initCurrentWeapon();
-		map = GameObject.Find("Terrain");
+		map = GameObject.Find("Map1");
 
 		// weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
 		// weaponUnused = GameObject.Instantiate(inventory.getCurrentWeapon());

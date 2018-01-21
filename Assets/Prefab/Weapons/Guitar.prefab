@@ -122,7 +122,7 @@ MeshCollider:
   m_GameObject: {fileID: 1870778821189576}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -156,5 +156,6 @@ MonoBehaviour:
   damage: 10
   onGround: 0
   shine: {fileID: 19800006, guid: 4b8e36a33df86428aa3bec11134bc0e7, type: 2}
+  shineInstance: {fileID: 0}
   icon: {fileID: 2800000, guid: 9e2f0396f8b894b5296641f44b6b03d2, type: 3}
   quality: 0
