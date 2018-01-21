@@ -38,6 +38,13 @@ public class InGameUI : MonoBehaviour {
 
 		for (int i = 0 ; i < 4 ; i++)
 		{
+			if (!sorts[i])
+			{
+				sortsImages[i].transform.GetChild(0).GetComponent<Text>().text = "";
+				sortsImages[i].color = new Color(0,0,0,0.5f);
+				continue;
+			}
+			sortsImages[i].color = Color.white;
 			if (lastSend[i] + sorts[i].restorationDelay < Time.realtimeSinceStartup)
 				sortsImages[i].transform.GetChild(0).GetComponent<Text>().text = "";
 			else

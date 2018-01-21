@@ -10,6 +10,8 @@ public class TalentUpgrade : MonoBehaviour {
 	public RawImage	image;
 	public Button	button;
 	public Stats	maya;
+	public Text		key;
+	public Text		level;
 
 	// Use this for initialization
 	void Start () {
@@ -22,5 +24,27 @@ public class TalentUpgrade : MonoBehaviour {
 			button.interactable = false;
 		else
 			button.interactable = true;
+		if (sort.level == 0)
+			image.color = Color.grey;
+		else
+			image.color = Color.white;
+
+		level.text = " lvl: " + sort.level.ToString();
+
+		SetKeyText();
+	}
+
+	void SetKeyText() {
+		MayaSorts player = maya.GetComponent<MayaSorts>();
+
+		for (int i = 0 ; i < 4 ; i++)
+		{
+			if (player.sorts[i] == sort)
+			{
+				key.text = " key: " + (i + 1).ToString();
+				return ;
+			}
+		}
+		key.text = " key: -";
 	}
 }
