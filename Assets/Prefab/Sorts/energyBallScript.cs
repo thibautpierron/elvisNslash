@@ -53,6 +53,6 @@ public class energyBallScript : Sort {
 	}
 
 	public override string Info() {
-		return "Make a bubble shield around you. Increase your armor";
+		return "Petite balle d'energie. Fait " + damage.ToString() + " de degats au contact.\nPorchain niveau:\n - degat " + ((int)((float)damage * 1.5f)).ToString();
 	}
 }

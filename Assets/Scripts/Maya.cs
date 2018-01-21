@@ -189,11 +189,11 @@ public class Maya : MonoBehaviour {
 			isAttacking = false;
 			targetEnemy = null;
 			if (stats.xp > stats.levelUpXp)
-				levelUp();
+				stats.LevelUp();
 		}
 	}
 
-	void levelUp() {
+	public void levelUp() {
 		stats.xp = 0;
 		stats.level++;
 		int newXPn = Mathf.RoundToInt(stats.levelUpXp * 1.5f);

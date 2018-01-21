@@ -59,6 +59,7 @@ public class hillScript : Sort {
 	}
 
 	public override string Info() {
-		return "Heal zone";
+		return "Soigne " + damage.ToString() + " toutes les " + delay.ToString() + " sec pendant " + time.ToString() + " sec sur une zone donnee.\nProchain niveau:\n - soin "
+			+ ((int)((float)damage * 1.5f)).ToString() + "\n - delay " + (delay - 0.2f).ToString() + "\n - duree " + (time + 2).ToString();
 	}
 }

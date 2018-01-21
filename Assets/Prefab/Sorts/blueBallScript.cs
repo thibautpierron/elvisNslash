@@ -72,6 +72,6 @@ public class blueBallScript : Sort {
 	}
 
 	public override string Info() {
-		return "Fait une bulle de protection autour de vous. Augmente votre armure de  pendant ";
+		return "Grosse balle d'energie. Fait " + damage.ToString() + " de degats au contact.\nPorchain niveau:\n - degat " + ((int)((float)damage * 1.5f)).ToString();
 	}
 }

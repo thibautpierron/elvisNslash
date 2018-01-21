@@ -50,10 +50,10 @@ public class SparkScript : Sort {
 		level++;
 		if (level == 1)
 			return ;
-		damage = (int)((float)damage * 1.8f);
+		damage = (int)((float)damage * 1.6f);
 	}
 
 	public override string Info() {
-		return "Spark";
+		return "Inflige de tres gros degats dans une petite zone donnee. Puissance de " + damage.ToString() + " actuellement.\nProchain niveau:\n - degats " + ((int)((float)damage * 1.6f)).ToString();
 	}
 }

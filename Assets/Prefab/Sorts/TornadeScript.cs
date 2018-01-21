@@ -5,7 +5,7 @@ using UnityEngine;
 public class TornadeScript : Sort {
 
 	private float				delay = 0.5f;
-	private int					damage = 2;
+	public int					damage = 5;
 	private int					time = 7;
 	private List<Stats>			enemy;
 
@@ -58,6 +58,7 @@ public class TornadeScript : Sort {
 	}
 
 	public override string Info() {
-		return "Make a bubble shield around you. Increase your armor";
+		return "Inflige " + damage.ToString() + " de degat autour de toi toutes les " + delay.ToString() + " sec pendant " + time.ToString() + " sec\nProchain niveau:\n - degat "
+			+ ((int)((float)damage * 1.5f)).ToString() + "\n - duree " + (time + 2).ToString();
 	}
 }
