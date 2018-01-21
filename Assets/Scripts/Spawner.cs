@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	public void spawnZombie() {
-		int i = Random.Range(0, 2);
+		int i = Random.Range(0, prefabs.Length);
 		float x = Random.Range(transform.position.x - 5, transform.position.x + 5);
 		float z = Random.Range(transform.position.z - 5, transform.position.z + 5);
 		GameObject zom = GameObject.Instantiate(prefabs[i], new Vector3(x, transform.position.y, z), Quaternion.identity);
