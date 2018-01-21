@@ -15,6 +15,9 @@ public class Sort : MonoBehaviour {
 	public int				positionInTab;
 	public Texture			image;
 
+	public AudioSource		audio;
+	public AudioClip		sound;
+
 
 	// Use this for initialization
 	void Start () {
