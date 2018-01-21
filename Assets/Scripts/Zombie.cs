@@ -82,6 +82,7 @@ public class Zombie : MonoBehaviour {
 				Stats mayaStat = maya.GetComponent<Stats>();
 				int damage = stats.getDamage(mayaStat);
 				// Debug.Log(damage);
+				GetComponent<AudioSource>().Play();
 				mayaStat.hp -= damage;
 				if (mayaStat.hp <= 0) {
 					attack = false;
