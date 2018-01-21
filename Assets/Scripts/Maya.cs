@@ -46,43 +46,8 @@ public class Maya : MonoBehaviour {
 		nav = gameObject.GetComponent<NavMeshAgent>();
 		stats = gameObject.GetComponent<Stats>();
 		inventory = gameObject.GetComponent<Inventory>();
-		// inventory.initCurrentGuitar();
-		// inventory.initCurrentWeapon();
+
 		map = GameObject.Find("Map1");
-
-		// weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
-		// weaponUnused = GameObject.Instantiate(inventory.getCurrentWeapon());
-		// weapon.gameObject.transform.parent = rightHandPlace.transform;
-
-		// guitar = GameObject.Instantiate(inventory.getCurrentGuitar());
-		// guitar.transform.position = rightHandPlace.transform.position;
-		// guitar.transform.rotation = rightHandPlace.transform.rotation;
-		// guitar.gameObject.transform.parent = rightHandPlace.transform;
-		// guitarUnused = GameObject.Instantiate(inventory.getCurrentGuitar());
-		// guitarUnused.transform.position = guitarBackPlace.transform.position;
-		// guitarUnused.transform.rotation = guitarBackPlace.transform.rotation;
-		// guitarUnused.gameObject.transform.parent = guitarBackPlace.transform;
-
-		// switch (weapon.type) {
-		// 	case Weapon.Type.ONE_HAND:
-		// 		weaponUnused.transform.position = beltPlace.transform.position;
-		// 		weaponUnused.transform.rotation = beltPlace.transform.rotation;
-		// 		weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
-		// 	case Weapon.Type.TWO_HAND:
-		// 		weaponUnused.transform.position = weaponBackPlace.transform.position;
-		// 		weaponUnused.transform.rotation = weaponBackPlace.transform.rotation;
-		// 		weaponUnused.gameObject.transform.parent = weaponBackPlace.transform; break;
-		// 	case Weapon.Type.DOUBLE:
-		// 		weaponUnused.transform.position = beltPlace.transform.position;
-		// 		weaponUnused.transform.rotation = beltPlace.transform.rotation;
-		// 		weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
-		// }
-
-		// weapon.gameObject.SetActive(false);
-		// weaponUnused.gameObject.SetActive(true);
-		// guitar.gameObject.SetActive(false);
-		// guitarUnused.gameObject.SetActive(true);
-		// weaponUsed = weapon;
 
 		refreshInventory();
 
@@ -123,7 +88,7 @@ public class Maya : MonoBehaviour {
 
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
 				string tag = hit.collider.gameObject.tag;
-				if (tag == "Zombie") {
+				if (tag == "Zombie"/* && hit.collider.gameObject.GetComponent<Stats>().hp*/) {
 					// Debug.Log("HIT ZOMBIE");
 					destination = hit.collider.gameObject.transform.position;
 					targetEnemy = hit.collider.gameObject;

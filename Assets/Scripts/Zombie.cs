@@ -49,7 +49,7 @@ public class Zombie : MonoBehaviour {
 		navigation();
 		if (health <= 0) {
 			nav.enabled = false;
-			// gameObject.GetComponent<BoxCollider>().enabled = false;
+			gameObject.GetComponent<BoxCollider>().enabled = false;
 			dead = true;
 			drop();
 			StartCoroutine(deathAnimation());

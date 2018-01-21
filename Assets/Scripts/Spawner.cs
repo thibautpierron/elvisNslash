@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour {
 
 	public int size = 10;
 	public int frequency = 10;
+	public int zoneSize;
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < size; i++) {
@@ -20,8 +21,8 @@ public class Spawner : MonoBehaviour {
 	// Update is called once per frame
 	public void spawnZombie() {
 		int i = Random.Range(0, prefabs.Length);
-		float x = Random.Range(transform.position.x - 5, transform.position.x + 5);
-		float z = Random.Range(transform.position.z - 5, transform.position.z + 5);
+		float x = Random.Range(transform.position.x - zoneSize, transform.position.x + zoneSize);
+		float z = Random.Range(transform.position.z - zoneSize, transform.position.z + zoneSize);
 		GameObject zom = GameObject.Instantiate(prefabs[i], new Vector3(x, transform.position.y, z), Quaternion.identity);
 		zom.GetComponent<Zombie>().spawner = this;
 	}
