@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4223802979154982}
   - component: {fileID: 114982371404674570}
+  - component: {fileID: 65080529303492720}
   m_Layer: 0
   m_Name: Guitar
-  m_TagString: Untagged
+  m_TagString: Guitar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +128,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7b42791c875e18942999cd7b425b1957, type: 3}
+--- !u!65 &65080529303492720
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1769531550456948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114982371404674570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,3 +154,7 @@ MonoBehaviour:
   type: 0
   hitRate: 0
   damage: 10
+  onGround: 0
+  shine: {fileID: 19800006, guid: 4b8e36a33df86428aa3bec11134bc0e7, type: 2}
+  icon: {fileID: 2800000, guid: 9e2f0396f8b894b5296641f44b6b03d2, type: 3}
+  quality: 0

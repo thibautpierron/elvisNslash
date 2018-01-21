@@ -2513,6 +2513,10 @@ MonoBehaviour:
   health: 3
   aggroRange: 10
   spawner: {fileID: 0}
+  dropPossibilities:
+  - {fileID: 114982371404674570, guid: a20542587822c491b9516e0427d47029, type: 2}
+  - {fileID: 114005247202774318, guid: 177bcb156660949f1a909c6e7b144d88, type: 2}
+  - {fileID: 114509765684159496, guid: 23669b8d3887e46d4ae91ac43491e838, type: 2}
   hitRate: 1
 --- !u!114 &114787812738548188
 MonoBehaviour:
@@ -2535,6 +2539,8 @@ MonoBehaviour:
   xp: 30
   money: 10
   levelUpXp: 0
+  talentPoints: 0
+  caracPoints: 0
 --- !u!137 &137237828946482248
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Zombie
   - LaserSaber
+  - ItemInventory
+  - Guitar
+  - Snowboard
   layers:
   - Default
   - TransparentFX

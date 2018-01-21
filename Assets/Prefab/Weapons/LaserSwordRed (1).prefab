@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 114496960045566696}
   - component: {fileID: 114188480401480216}
   - component: {fileID: 114005247202774318}
+  - component: {fileID: 65840780801308242}
   m_Layer: 0
   m_Name: LaserSwordRed (1)
   m_TagString: LaserSaber
@@ -423,6 +424,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7527cc0e3b6359448a84dc6b9670b274, type: 3}
+--- !u!65 &65840780801308242
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962343770550566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &82115533437491146
 AudioSource:
   m_ObjectHideFlags: 1
@@ -632,7 +645,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   hitRate: 0
-  damage: 0
+  damage: 15
+  onGround: 0
+  shine: {fileID: 19800006, guid: 4b8e36a33df86428aa3bec11134bc0e7, type: 2}
+  icon: {fileID: 2800000, guid: 5072cd9059b1b4278bead04656135960, type: 3}
+  quality: 0
 --- !u!114 &114188480401480216
 MonoBehaviour:
   m_ObjectHideFlags: 1

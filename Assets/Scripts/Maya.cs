@@ -9,13 +9,18 @@ public class Maya : MonoBehaviour {
 	private Animator anim;
 	private GameObject map;
 	private NavMeshAgent nav;
-	public Weapon weaponPrefab;
+	private Inventory inventory;
+	[HideInInspector]public Stats stats;
+
+	// public Weapon weaponPrefab;
 	public Weapon weapon;
 	public Weapon weaponUnused;
 	public Weapon guitar;
-	[HideInInspector]public Stats stats;
+	public Weapon guitarUnused;
+	public Weapon weaponUsed;
 	private Vector3 destination;
 	public GameObject targetEnemy;
+
 	private float distToEnemy;
 	private int health;
 	private bool isAttacking;
@@ -29,7 +34,6 @@ public class Maya : MonoBehaviour {
 	private Transform guitarBackPlace;
 	private Transform beltPlace;
 
-	// private Transform originPos;
 	// Use this for initialization
 	void Start () {
 		rightHandPlace = GameObject.Find("WeaponRightHandPlace").GetComponent<Transform>();
@@ -41,34 +45,44 @@ public class Maya : MonoBehaviour {
 		anim = gameObject.GetComponent<Animator>();
 		nav = gameObject.GetComponent<NavMeshAgent>();
 		stats = gameObject.GetComponent<Stats>();
+		inventory = gameObject.GetComponent<Inventory>();
 		map = GameObject.Find("Terrain");
 
-		weapon = GameObject.Instantiate(weaponPrefab);
-		weaponUnused = GameObject.Instantiate(weaponPrefab);
-		weapon.gameObject.transform.parent = rightHandPlace.transform;
+		// weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
+		// weaponUnused = GameObject.Instantiate(inventory.getCurrentWeapon());
+		// weapon.gameObject.transform.parent = rightHandPlace.transform;
 
-		guitar = GameObject.Instantiate(guitar);
-		guitar.transform.position = guitarBackPlace.transform.position;
-		guitar.transform.rotation = guitarBackPlace.transform.rotation;
-		guitar.gameObject.transform.parent = guitarBackPlace.transform;
+		// guitar = GameObject.Instantiate(inventory.getCurrentGuitar());
+		// guitar.transform.position = rightHandPlace.transform.position;
+		// guitar.transform.rotation = rightHandPlace.transform.rotation;
+		// guitar.gameObject.transform.parent = rightHandPlace.transform;
+		// guitarUnused = GameObject.Instantiate(inventory.getCurrentGuitar());
+		// guitarUnused.transform.position = guitarBackPlace.transform.position;
+		// guitarUnused.transform.rotation = guitarBackPlace.transform.rotation;
+		// guitarUnused.gameObject.transform.parent = guitarBackPlace.transform;
 
-		switch (weapon.type) {
-			case Weapon.Type.ONE_HAND:
-				weaponUnused.transform.position = beltPlace.transform.position;
-				weaponUnused.transform.rotation = beltPlace.transform.rotation;
-				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
-			case Weapon.Type.TWO_HAND:
-				weaponUnused.transform.position = weaponBackPlace.transform.position;
-				weaponUnused.transform.rotation = weaponBackPlace.transform.rotation;
-				weaponUnused.gameObject.transform.parent = weaponBackPlace.transform; break;
-			case Weapon.Type.DOUBLE:
-				weaponUnused.transform.position = beltPlace.transform.position;
-				weaponUnused.transform.rotation = beltPlace.transform.rotation;
-				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
-		}
+		// switch (weapon.type) {
+		// 	case Weapon.Type.ONE_HAND:
+		// 		weaponUnused.transform.position = beltPlace.transform.position;
+		// 		weaponUnused.transform.rotation = beltPlace.transform.rotation;
+		// 		weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+		// 	case Weapon.Type.TWO_HAND:
+		// 		weaponUnused.transform.position = weaponBackPlace.transform.position;
+		// 		weaponUnused.transform.rotation = weaponBackPlace.transform.rotation;
+		// 		weaponUnused.gameObject.transform.parent = weaponBackPlace.transform; break;
+		// 	case Weapon.Type.DOUBLE:
+		// 		weaponUnused.transform.position = beltPlace.transform.position;
+		// 		weaponUnused.transform.rotation = beltPlace.transform.rotation;
+		// 		weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+		// }
 
-		weapon.gameObject.SetActive(false);
-		weaponUnused.gameObject.SetActive(true);
+		// weapon.gameObject.SetActive(false);
+		// weaponUnused.gameObject.SetActive(true);
+		// guitar.gameObject.SetActive(false);
+		// guitarUnused.gameObject.SetActive(true);
+		// weaponUsed = weapon;
+
+		refreshInventory();
 
 		destination = transform.position;
 		move = false;
@@ -81,7 +95,10 @@ public class Maya : MonoBehaviour {
 		health = stats.hp;
 		if (dead || inMenu)
 			return;
+
 		clickHandler();
+		if (Input.GetKeyDown("w") && !isAttacking)
+			switchWeapon();
 		manageAttack();
 		updateAnimator();
 		navigation();
@@ -99,13 +116,17 @@ public class Maya : MonoBehaviour {
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 			if (Physics.Raycast(ray, out hit, Mathf.Infinity)) {
-				if (hit.collider.gameObject.tag == "Zombie") {
+				string tag = hit.collider.gameObject.tag;
+				if (tag == "Zombie") {
 					// Debug.Log("HIT ZOMBIE");
 					destination = hit.collider.gameObject.transform.position;
 					targetEnemy = hit.collider.gameObject;
 					isAttacking = true;
 					return;
+				} else if (tag == "SnowBoard" || tag == "LaserSaber" || tag == "Guitar") {
+					Debug.Log("CLICK ON WEAPON");
 				}
+
 			}
 			if (map.GetComponent<Collider>().Raycast (ray, out hit, Mathf.Infinity)) {
 				destination = hit.point;
@@ -144,7 +165,7 @@ public class Maya : MonoBehaviour {
 
 	void updateAnimator() {
 		anim.SetInteger("health", health);
-		anim.SetInteger("attackType", (int)weapon.type);
+		anim.SetInteger("attackType", (int)weaponUsed.type);
 		anim.SetBool("isMoving", move);
 		anim.SetBool("attack", isAttacking);
 		if (isAttacking)
@@ -169,10 +190,10 @@ public class Maya : MonoBehaviour {
 		}
     }
 	IEnumerator	attack() {
-		yield return new WaitForSeconds(weapon.getFirstHitTiming());
+		yield return new WaitForSeconds(weaponUsed.getFirstHitTiming());
 		while(isAttacking) {
 			applyDamage();
-        	yield return new WaitForSeconds(weapon.getRegularHitTiming());
+        	yield return new WaitForSeconds(weaponUsed.getRegularHitTiming());
 		}
     }
 
@@ -180,7 +201,7 @@ public class Maya : MonoBehaviour {
 		Stats enemy = targetEnemy.GetComponent<Stats>();
 		int damage = stats.getDamage(enemy);
 		Debug.Log(damage);
-		enemy.hp -= damage;
+		enemy.hp -= damage + weaponUsed.getDamage();
 		if (enemy.hp <= 0) {
 			StopCoroutine(attack());
 			routineAttack = null;
@@ -202,18 +223,79 @@ public class Maya : MonoBehaviour {
 
 	void manageWeaponPlace(bool attacking) {
 		if (attacking) {
-			weapon.gameObject.SetActive(true);
-			weaponUnused.gameObject.SetActive(false);
-			if (weapon.gameObject.tag == "LaserSaber") {
-				if (weapon.GetComponentInChildren<LaserSwordScript>().state == 0)
-					weapon.GetComponentInChildren<LaserSwordScript>().Activate();
-				// weaponUnused.GetComponentInChildren<LaserSwordScript>().Deactivate();
+			if (weaponUsed == guitar) {
+				guitar.gameObject.SetActive(true);
+				guitarUnused.gameObject.SetActive(false);
+				weapon.gameObject.SetActive(false);
+				weaponUnused.gameObject.SetActive(true);
+			} else {
+				weapon.gameObject.SetActive(true);
+				weaponUnused.gameObject.SetActive(false);
+				if (weapon.gameObject.tag == "LaserSaber") {
+					if (weapon.GetComponentInChildren<LaserSwordScript>().state == 0)
+						weapon.GetComponentInChildren<LaserSwordScript>().Activate();
+				}
+				guitar.gameObject.SetActive(false);
+				guitarUnused.gameObject.SetActive(true);
 			}
 		} else {
 			weapon.gameObject.SetActive(false);
 			weaponUnused.gameObject.SetActive(true);
-			// if (weapon.GetComponentInChildren<LaserSwordScript>().state == 1)
-			// 	weapon.GetComponentInChildren<LaserSwordScript>().Deactivate();
+			guitar.gameObject.SetActive(false);
+			guitarUnused.gameObject.SetActive(true);
 		}
+	}
+
+	void switchWeapon() {
+		if (weaponUsed == weapon)
+			weaponUsed = guitar;
+		else
+			weaponUsed = weapon;
+	}
+
+	public void refreshInventory() {
+
+		if (weapon)
+			Destroy(weapon);
+		if (weaponUnused)
+			Destroy(weaponUnused);
+		if (guitar)
+			Destroy(guitar);
+		if(guitarUnused)
+			Destroy(guitarUnused);
+
+		weapon = GameObject.Instantiate(inventory.getCurrentWeapon());
+		weaponUnused = GameObject.Instantiate(inventory.getCurrentWeapon());
+		weapon.gameObject.transform.parent = rightHandPlace.transform;
+
+		guitar = GameObject.Instantiate(inventory.getCurrentGuitar());
+		guitar.transform.position = rightHandPlace.transform.position;
+		guitar.transform.rotation = rightHandPlace.transform.rotation;
+		guitar.gameObject.transform.parent = rightHandPlace.transform;
+		guitarUnused = GameObject.Instantiate(inventory.getCurrentGuitar());
+		guitarUnused.transform.position = guitarBackPlace.transform.position;
+		guitarUnused.transform.rotation = guitarBackPlace.transform.rotation;
+		guitarUnused.gameObject.transform.parent = guitarBackPlace.transform;
+
+		switch (weapon.type) {
+			case Weapon.Type.ONE_HAND:
+				weaponUnused.transform.position = beltPlace.transform.position;
+				weaponUnused.transform.rotation = beltPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+			case Weapon.Type.TWO_HAND:
+				weaponUnused.transform.position = weaponBackPlace.transform.position;
+				weaponUnused.transform.rotation = weaponBackPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = weaponBackPlace.transform; break;
+			case Weapon.Type.DOUBLE:
+				weaponUnused.transform.position = beltPlace.transform.position;
+				weaponUnused.transform.rotation = beltPlace.transform.rotation;
+				weaponUnused.gameObject.transform.parent = beltPlace.transform; break;
+		}
+
+		weapon.gameObject.SetActive(false);
+		weaponUnused.gameObject.SetActive(true);
+		guitar.gameObject.SetActive(false);
+		guitarUnused.gameObject.SetActive(true);
+		weaponUsed = weapon;
 	}
 }
